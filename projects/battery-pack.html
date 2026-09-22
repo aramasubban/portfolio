@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battery Pack Design & Thermal System — Akul Ramasubban</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand display" href="../index.html">AKUL R.<span class="dot">/</span></a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/resume.pdf">Resume</a>
+    </nav>
+  </header>
+
+  <div class="crumb mono">
+    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Battery Pack Design &amp; Thermal System</span>
+  </div>
+
+  <div class="proj-head">
+    <div class="id-line mono">CS—01 / PACK</div>
+    <h1 class="display">Battery Pack Design &amp; Thermal System</h1>
+    <p class="one-liner">Purdue Electric Racing — reworking the pack architecture from cell layout through thermal validation.</p>
+    <div class="proj-meta mono">
+      <div><span class="k">Role</span><span class="v">Battery Systems Lead, Purdue Electric Racing</span></div>
+      <div><span class="k">Timeframe</span><span class="v">Fall 2024 — Spring 2025</span></div>
+      <div><span class="k">Tools</span><span class="v">Simscape, SolidWorks, Arduino</span></div>
+    </div>
+  </div>
+
+  <div class="cover">
+    <svg viewBox="0 0 320 240" fill="none">
+      <rect class="dim" x="26" y="26" width="268" height="188" stroke-dasharray="4 4" stroke-width="1"/>
+      <g class="a" stroke-width="1.6">
+        <circle cx="70" cy="70" r="18"/><circle cx="112" cy="70" r="18"/><circle cx="154" cy="70" r="18"/><circle cx="196" cy="70" r="18"/><circle cx="238" cy="70" r="18"/>
+        <circle cx="91" cy="108" r="18"/><circle cx="133" cy="108" r="18"/><circle cx="175" cy="108" r="18"/><circle cx="217" cy="108" r="18"/>
+        <circle cx="70" cy="146" r="18"/><circle cx="112" cy="146" r="18"/><circle cx="154" cy="146" r="18"/><circle cx="196" cy="146" r="18"/><circle cx="238" cy="146" r="18"/>
+      </g>
+      <path class="b" d="M40 184 Q90 200 140 184 T240 184 T290 190" stroke-width="1.6" stroke-linecap="round"/>
+      <g class="dim" stroke-width="1">
+        <path d="M60 60 l8 8 M60 68 l8 -8"/>
+        <path d="M226 136 l8 8 M226 144 l8 -8"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">01</div>
+    <div>
+      <h2 class="display">Problem</h2>
+      <p>The prior season's pack ran conservative cell spacing and an off-the-shelf thermal
+        interface that left real energy density on the table and made the enclosure hard to
+        seal cleanly for tech inspection.</p>
+    </div>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">02</div>
+    <div>
+      <h2 class="display">Approach</h2>
+      <p>Modeled pack behavior in Simscape before touching hardware, then redesigned the module
+        layout to tighten cell spacing without compromising thermal paths. Paired the new layout
+        with a custom thermal interface/spacer system, and validated cooling performance with an
+        Arduino-instrumented test plate before committing to the final enclosure.</p>
+    </div>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">03</div>
+    <div>
+      <h2 class="display">Result</h2>
+      <div class="stats">
+        <div class="stat"><div class="num-big display">30%</div><div class="num-lbl">increase in pack energy density</div></div>
+        <div class="stat"><div class="num-big display">10%</div><div class="num-lbl">gain in cooling performance</div></div>
+        <div class="stat"><div class="num-big display">100%</div><div class="num-lbl">leak-free at tech inspection</div></div>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding-block:12px 0;">
+    <div class="gallery-head mono">Gallery — to add</div>
+    <div class="gallery">
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">CAD render — module exploded view</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Photo — assembled pack in enclosure</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Simscape model — thermal simulation</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Test rig — Arduino-instrumented cooling plate</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Chart — before / after thermal performance</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Photo — tech inspection, competition day</span></div>
+    </div>
+  </section>
+
+  <div class="reflection">
+    If I did this again I'd instrument the thermal test rig earlier — most of the schedule risk
+    came from waiting on physical validation to catch what the model couldn't.
+  </div>
+
+  <div class="prevnext mono">
+    <a class="pn-link" href="pushcart.html"><span class="pn-k">← PREV CASE STUDY</span><span class="pn-v">The Pushcart Project</span></a>
+    <a class="pn-link next" href="orchard-robot.html"><span class="pn-k">NEXT CASE STUDY →</span><span class="pn-v">Autonomous Orchard Spraying Robot</span></a>
+  </div>
+
+  <footer id="contact">
+    <div class="fgrid">
+      <div class="brand display">Let's build something.</div>
+      <div class="flinks mono">
+        <a href="mailto:akul@example.com">akul@example.com</a>
+        <a href="#">LinkedIn</a>
+        <a href="../assets/resume.pdf">Resume ↓</a>
+      </div>
+    </div>
+    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+  </footer>
+</div>
+</body>
+</html>

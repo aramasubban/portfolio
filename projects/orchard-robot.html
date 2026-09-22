@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autonomous Orchard Spraying Robot — Akul Ramasubban</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand display" href="../index.html">AKUL R.<span class="dot">/</span></a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/resume.pdf">Resume</a>
+    </nav>
+  </header>
+
+  <div class="crumb mono">
+    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Autonomous Orchard Spraying Robot</span>
+  </div>
+
+  <div class="proj-head">
+    <div class="id-line mono">CS—02 / SPRAY</div>
+    <h1 class="display">Autonomous Orchard Spraying Robot</h1>
+    <p class="one-liner">Purdue MARS Lab — a sprayer end effector and perception pipeline that treats only diseased foliage.</p>
+    <div class="proj-meta mono">
+      <div><span class="k">Role</span><span class="v">Robotics Researcher, Purdue MARS Lab</span></div>
+      <div><span class="k">Timeframe</span><span class="v">Summer 2025 — Present</span></div>
+      <div><span class="k">Tools</span><span class="v">ROS2, DINO / SAM, Unitree quadruped</span></div>
+    </div>
+  </div>
+
+  <div class="cover">
+    <svg viewBox="0 0 320 240" fill="none">
+      <g class="a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="60" y="140" width="60" height="30" rx="4"/>
+        <path d="M65 170 L50 200 M115 170 L100 200 M65 170 L80 200 M115 170 L96 200"/>
+        <path d="M110 145 L160 100 L182 100"/>
+        <circle cx="188" cy="100" r="6"/>
+      </g>
+      <g class="b" stroke-width="1.6" stroke-linecap="round">
+        <path d="M220 205 Q216 150 236 108"/>
+        <ellipse cx="238" cy="100" rx="16" ry="9" transform="rotate(-30 238 100)"/>
+        <ellipse cx="256" cy="120" rx="14" ry="8" transform="rotate(20 256 120)"/>
+        <ellipse cx="252" cy="150" rx="13" ry="7" transform="rotate(-10 252 150)"/>
+      </g>
+      <g class="dim" stroke-width="1" stroke-dasharray="3 3">
+        <polygon points="222,84 256,92 262,116 236,124"/>
+      </g>
+      <g class="dim" stroke-width="1">
+        <circle cx="238" cy="100" r="14"/>
+        <path d="M238 90 v6 M238 104 v6 M228 100 h6 M242 100 h6"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">01</div>
+    <div>
+      <h2 class="display">Problem</h2>
+      <p>Orchard spraying is usually blanket coverage — every plant gets treated whether it
+        needs it or not, which wastes chemical and increases exposure for anything nearby.</p>
+    </div>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">02</div>
+    <div>
+      <h2 class="display">Approach</h2>
+      <p>Mounted a sprayer end effector on a robotic arm carried by a Unitree quadruped, then
+        built a perception pipeline on top of DINO and SAM to detect and segment diseased
+        foliage in the camera feed. The segmentation output is converted into targets the arm
+        controller can aim at, so the sprayer only fires on regions flagged as infected.</p>
+    </div>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">03</div>
+    <div>
+      <h2 class="display">Result</h2>
+      <span class="status-badge mono"><span class="status-dot"></span>In progress — perception pipeline validated on collected orchard imagery; field integration with the arm controller is the current milestone.</span>
+    </div>
+  </div>
+
+  <section style="padding-block:12px 0;">
+    <div class="gallery-head mono">Gallery — to add</div>
+    <div class="gallery">
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Photo — quadruped + arm + sprayer end effector</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Diagram — system architecture</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Output — DINO / SAM segmentation mask</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Diagram — perception → control pipeline</span></div>
+    </div>
+  </section>
+
+  <div class="reflection">
+    Fine to present as in-progress — the interesting engineering here is in the
+    perception-to-control handoff, not a finished product yet.
+  </div>
+
+  <div class="prevnext mono">
+    <a class="pn-link" href="battery-pack.html"><span class="pn-k">← PREV CASE STUDY</span><span class="pn-v">Battery Pack Design &amp; Thermal System</span></a>
+    <a class="pn-link next" href="pushcart.html"><span class="pn-k">NEXT CASE STUDY →</span><span class="pn-v">The Pushcart Project</span></a>
+  </div>
+
+  <footer id="contact">
+    <div class="fgrid">
+      <div class="brand display">Let's build something.</div>
+      <div class="flinks mono">
+        <a href="mailto:akul@example.com">akul@example.com</a>
+        <a href="#">LinkedIn</a>
+        <a href="../assets/resume.pdf">Resume ↓</a>
+      </div>
+    </div>
+    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+  </footer>
+</div>
+</body>
+</html>

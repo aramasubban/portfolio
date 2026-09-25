@@ -51,8 +51,11 @@
     </div>
   </div>
 
-  <div class="cover">
-    <svg viewBox="0 0 320 240" fill="none">
+  <div class="wip-banner">
+    <div class="wip-stripe" aria-hidden="true"></div>
+    <div class="wip-inner">
+      <div class="wip-art" aria-hidden="true">
+        <svg class="wip-svg" viewBox="0 0 320 240" fill="none">
       <g class="a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <rect x="60" y="140" width="60" height="30" rx="4"/>
         <path d="M65 170 L50 200 M115 170 L100 200 M65 170 L80 200 M115 170 L96 200"/>
@@ -73,6 +76,15 @@
         <path d="M238 90 v6 M238 104 v6 M228 100 h6 M242 100 h6"/>
       </g>
     </svg>
+      </div>
+      <div class="wip-copy">
+        <div class="wip-k mono"><span class="status-dot"></span>Status: active build</div>
+        <div class="wip-title display">Work in<br><em>progress.</em></div>
+        <p>We just switched the end effector from a sprayer to a laser. Photos and results go
+          up here once it&rsquo;s running.</p>
+      </div>
+    </div>
+    <div class="wip-stripe" aria-hidden="true"></div>
   </div>
 
   <div class="proj-body">
@@ -105,15 +117,6 @@
     </div>
   </div>
 
-  <section style="padding-block:12px 0;">
-    <div class="gallery-head mono">Gallery — to add</div>
-    <div class="gallery">
-      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Photo — quadruped + arm + laser end effector</span></div>
-      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Diagram — system architecture</span></div>
-      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Output — DINO / SAM segmentation mask</span></div>
-      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Diagram — perception → control pipeline</span></div>
-    </div>
-  </section>
 
 
   <div class="prevnext mono">

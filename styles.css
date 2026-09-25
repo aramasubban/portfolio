@@ -288,3 +288,52 @@ footer{padding-block:40px 56px; border-top:1px solid var(--line);}
   .skills-grid{grid-template-columns:repeat(2,1fr);}
   .contact-panel{right:auto; left:0;}
 }
+
+/* ---- tesla / NDA page ---- */
+.nda-panel{
+  margin-block:48px; display:grid; grid-template-columns:0.9fr 1.1fr; gap:48px; align-items:center;
+  border:1px solid var(--line); padding:40px;
+  background:repeating-linear-gradient(135deg, transparent 0 14px, var(--accent-soft) 14px 15px), var(--bg-card);
+}
+.nda-doc{
+  position:relative; background:var(--bg); border:1px solid var(--line-strong); padding:22px 22px 30px;
+  display:flex; flex-direction:column; gap:12px; transform:rotate(-1.5deg);
+}
+.nda-doc-head{display:flex; justify-content:space-between; font-size:0.62rem; letter-spacing:0.1em; color:var(--text-faint); margin-bottom:6px;}
+.nda-doc .bar{display:block; height:14px; background:var(--text); opacity:0.88;}
+.nda-doc .bar.short{margin-bottom:10px;}
+.stamp{
+  position:absolute; right:18px; bottom:22px; transform:rotate(-12deg);
+  border:3px solid var(--accent); color:var(--accent); padding:4px 14px;
+  font-size:1.5rem; font-weight:600; letter-spacing:0.18em; background:var(--bg);
+}
+.nda-k{font-size:0.72rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-faint); margin-bottom:14px;}
+.nda-copy h2{font-size:clamp(1.4rem,2.6vw,1.9rem); font-weight:600; line-height:1.2;}
+.nda-copy h2 em{color:var(--accent); font-style:normal;}
+.nda-copy p{margin-top:16px; color:var(--text-dim); line-height:1.7; max-width:48ch;}
+
+.work-list{display:grid; grid-template-columns:repeat(2,1fr); gap:0; border-top:1px solid var(--line);}
+.work-item{padding:30px 32px 30px 0; border-bottom:1px solid var(--line); display:flex; flex-direction:column;}
+.work-item:nth-child(even){padding:30px 0 30px 32px; border-left:1px solid var(--line);}
+.wi-top{display:flex; gap:14px; font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-faint);}
+.wi-num{color:var(--accent);}
+.work-item h3{margin-top:14px; font-size:1.15rem; font-weight:600; line-height:1.3;}
+.work-item p{margin-top:12px; color:var(--text-dim); line-height:1.7; font-size:0.97rem; flex:1;}
+.wi-metric{margin-top:18px; align-self:flex-start; font-size:0.7rem; letter-spacing:0.06em; padding:5px 10px; color:var(--accent); border:1px solid var(--accent); background:var(--accent-soft);}
+
+/* home card art for NDA work */
+.proj-art.nda-art{display:flex; align-items:center; justify-content:center;
+  background:repeating-linear-gradient(135deg, transparent 0 14px, var(--accent-soft) 14px 15px), var(--bg-card);}
+.nda-art .nda-doc{width:58%; padding:16px 16px 22px; gap:9px;}
+.nda-art .nda-doc .bar{height:10px;}
+.nda-art .stamp{font-size:1.05rem; right:12px; bottom:14px;}
+.card.feature{grid-column:1 / -1; display:grid; grid-template-columns:1fr 1fr;}
+.card.feature .proj-art{border-bottom:none; border-right:1px solid var(--line); aspect-ratio:auto; min-height:300px;}
+
+@media (max-width:900px){
+  .nda-panel{grid-template-columns:1fr; padding:24px;}
+  .work-list{grid-template-columns:1fr;}
+  .work-item, .work-item:nth-child(even){padding:26px 0; border-left:none;}
+  .card.feature{grid-template-columns:1fr;}
+  .card.feature .proj-art{border-right:none; border-bottom:1px solid var(--line);}
+}

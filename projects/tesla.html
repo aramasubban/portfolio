@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tesla — Akul Ramasubban</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand display" href="../index.html">AKUL R.<span class="dot">/</span></a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../assets/resume.pdf">Resume</a>
+      <div class="nav-contact">
+        <button class="contact-toggle" type="button" aria-haspopup="true" aria-expanded="false">Contact</button>
+        <div class="contact-panel" role="menu">
+          <a href="mailto:akul.ramasubban@gmail.com" role="menuitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M4 6.5l8 6 8-6"/></svg>
+            akul.ramasubban@gmail.com
+          </a>
+          <a href="tel:+16503137267" role="menuitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 4h4l1.5 4-2 2c1 2.5 3 4.5 5.5 5.5l2-2 4 1.5v4c0 .8-.7 1.5-1.5 1.5C10.5 20.5 3.5 13.5 3.5 5.5 3.5 4.7 4.2 4 5 4z"/></svg>
+            (650) 313-7267
+          </a>
+          <a href="https://www.linkedin.com/in/akulramasubban/" target="_blank" rel="noopener" role="menuitem">
+            <span class="badge">in</span>
+            linkedin.com/in/akulramasubban
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="crumb mono">
+    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Tesla</span>
+  </div>
+
+  <div class="proj-head">
+    <h1 class="display">Tesla</h1>
+    <p class="one-liner">Eight months on a battery cell manufacturing line, where the job was keeping the equipment running and making sure good cells kept coming out the other end.</p>
+    <div class="proj-meta mono">
+      <div><span class="k">Role</span><span class="v">Cell Manufacturing Equipment Design / Process Engineering Intern</span></div>
+      <div><span class="k">Timeframe</span><span class="v">Jan 2026 — Aug 2026</span></div>
+      <div><span class="k">Focus</span><span class="v">Equipment Design, Laser Welding, Yield</span></div>
+    </div>
+  </div>
+
+  <div class="nda-panel">
+    <div class="nda-doc" aria-hidden="true">
+      <div class="nda-doc-head mono"><span>FILE: CELL_MFG_2026</span><span>PHOTOS: 0</span></div>
+      <span class="bar" style="width:72%"></span>
+      <span class="bar" style="width:88%"></span>
+      <span class="bar" style="width:54%"></span>
+      <span class="bar short" style="width:36%"></span>
+      <span class="bar" style="width:80%"></span>
+      <span class="bar" style="width:64%"></span>
+      <div class="stamp mono">NDA</div>
+    </div>
+    <div class="nda-copy">
+      <div class="nda-k mono">Gallery</div>
+      <h2 class="display">No photos. <em>Trust me, it was cool.</em></h2>
+      <p>Everything I worked on lives behind an NDA, so the hardware stays off the internet.
+        There were lasers, custom jigs, and a small robot fixing a supplier&rsquo;s mistakes. I&rsquo;m happy to talk
+        through any of it in person.</p>
+    </div>
+  </div>
+
+  <section style="padding-block:24px 0;">
+    <div class="gallery-head mono">What I worked on</div>
+    <div class="work-list">
+      <article class="work-item">
+        <div class="wi-top mono"><span class="wi-num">01</span><span class="wi-kind">Accelerated test jig</span></div>
+        <h3 class="display">Shaking it until it breaks</h3>
+        <p>A fastening mechanism on one of our production tools kept failing every so often, and every failure took the equipment down with it. Waiting around for it to fail on its own wasn&rsquo;t an option, so I built a test jig that shook the part at the same vibration frequency the equipment actually sees, squeezing months of wear into a much shorter test. Once we knew how it failed, we could fix it before it stopped the line again.</p>
+        <div class="wi-metric mono">~10% availability</div>
+      </article>
+      <article class="work-item">
+        <div class="wi-top mono"><span class="wi-num">02</span><span class="wi-kind">Autonomous production tool</span></div>
+        <h3 class="display">A robot for someone else&rsquo;s mistake</h3>
+        <p>A supplier process was sending us current collectors that weren&rsquo;t always lined up, and that one issue was the single biggest availability and scrap loss on the floor. Instead of waiting on the supplier, I designed a small autonomous tool with timed actuation that pushes misaligned parts back into place right on the line. It went from a sketch to running in production.</p>
+        <div class="wi-metric mono">Largest floor loss, gone</div>
+      </article>
+      <article class="work-item">
+        <div class="wi-top mono"><span class="wi-num">03</span><span class="wi-kind">Root cause analysis</span></div>
+        <h3 class="display">Chasing a yield leak in laser welding</h3>
+        <p>Cell laser welding was losing a lot of yield, and nobody had a clean answer for why. I owned the root-cause analysis, ran DOEs, and dug through the data in JMP until the pattern finally showed up, then pushed the process changes through to production. Downstream, that came out to roughly ten thousand more good cells every week.</p>
+        <div class="wi-metric mono">+~10k cells / week</div>
+      </article>
+      <article class="work-item">
+        <div class="wi-top mono"><span class="wi-num">04</span><span class="wi-kind">Equipment upgrade</span></div>
+        <h3 class="display">Cleaner cells, less downtime</h3>
+        <p>One piece of equipment was letting contamination into cells. I designed an upgrade that cut that contamination sharply and, almost as a bonus, made the tool easier to maintain. It was one piece of the push to raise cell output for Cybercab.</p>
+        <div class="wi-metric mono">−25% maintenance downtime</div>
+      </article>
+      <article class="work-item">
+        <div class="wi-top mono"><span class="wi-num">05</span><span class="wi-kind">Rapid prototyping</span></div>
+        <h3 class="display">A cheap shield for an expensive failure</h3>
+        <p>A recurring failure on production equipment had a simple cause and an expensive outcome. I prototyped a protective barrier, ran it through production trials, and rolled it out, saving about $1,000 every time that failure would have happened.</p>
+        <div class="wi-metric mono">&gt; 2.5% availability</div>
+      </article>
+      <article class="work-item">
+        <div class="wi-top mono"><span class="wi-num">06</span><span class="wi-kind">Fleetwide standardization</span></div>
+        <h3 class="display">Getting every welder to agree</h3>
+        <p>Laser welders across the fleet weren&rsquo;t all running at the same power, and it showed up as uneven weld strength. I led the effort to standardize weld power and recalibrated each tool myself, which made the whole fleet noticeably more consistent.</p>
+        <div class="wi-metric mono">−20% weld asymmetry</div>
+      </article>
+    </div>
+  </section>
+
+  <div class="prevnext mono">
+    <a class="pn-link" href="racecar.html"><span class="pn-k">← PREV CASE STUDY</span><span class="pn-v">Phone-Controlled Mini Race Car</span></a>
+    <a class="pn-link next" href="battery-pack.html"><span class="pn-k">NEXT CASE STUDY →</span><span class="pn-v">Battery Pack Design &amp; Thermal System</span></a>
+  </div>
+
+  <footer id="contact">
+    <div class="fgrid">
+      <div class="brand display">Let's build something.</div>
+      <div class="flinks mono">
+        <a href="mailto:akul.ramasubban@gmail.com">akul.ramasubban@gmail.com</a>
+        <a href="https://www.linkedin.com/in/akulramasubban/">LinkedIn</a>
+        <a href="../assets/resume.pdf">Resume ↓</a>
+      </div>
+    </div>
+    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+  </footer>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

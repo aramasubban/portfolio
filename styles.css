@@ -380,4 +380,4 @@ footer{padding-block:40px 56px; border-top:1px solid var(--line);}
   .wip-inner{grid-template-columns:1fr; padding:32px 24px; gap:24px;}
   .wip-art{order:2;}
 }
-
+.gallery.two{grid-template-columns:repeat(2,1fr);}

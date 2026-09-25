@@ -154,6 +154,7 @@ section{padding-block:20px 72px;}
 .proj-art svg{width:100%; height:100%;}
 .proj-art.has-logo{display:flex; align-items:center; justify-content:center;}
 .proj-art img.logo-art{width:64%; height:auto;}
+.proj-art.has-photo img.photo{width:100%; height:100%; object-fit:cover; object-position:center 38%; display:block;}
 .proj-art svg .a{stroke:var(--accent);}
 .proj-art svg .b{stroke:var(--blueprint);}
 .proj-art svg .dim{stroke:var(--text-faint);}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phone-Controlled Crane Arm — Akul Ramasubban</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand display" href="../index.html">AKUL R.<span class="dot">/</span></a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../assets/resume.pdf">Resume</a>
+      <div class="nav-contact">
+        <button class="contact-toggle" type="button" aria-haspopup="true" aria-expanded="false">Contact</button>
+        <div class="contact-panel" role="menu">
+          <a href="mailto:akul.ramasubban@gmail.com" role="menuitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M4 6.5l8 6 8-6"/></svg>
+            akul.ramasubban@gmail.com
+          </a>
+          <a href="tel:+16503137267" role="menuitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 4h4l1.5 4-2 2c1 2.5 3 4.5 5.5 5.5l2-2 4 1.5v4c0 .8-.7 1.5-1.5 1.5C10.5 20.5 3.5 13.5 3.5 5.5 3.5 4.7 4.2 4 5 4z"/></svg>
+            (650) 313-7267
+          </a>
+          <a href="https://www.linkedin.com/in/akulramasubban/" target="_blank" rel="noopener" role="menuitem">
+            <span class="badge">in</span>
+            linkedin.com/in/akulramasubban
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="crumb mono">
+    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Phone-Controlled Crane Arm</span>
+  </div>
+
+  <div class="proj-head">
+    <h1 class="display">Phone-Controlled Crane Arm</h1>
+    <p class="one-liner">&ldquo;The Lifting Line&rdquo;: a toy tower crane that spins 360°, drops an electromagnet on a spool, and runs from a phone. Built with a team of four for ME 444 at Purdue.</p>
+    <div class="proj-meta mono">
+      <div><span class="k">Team</span><span class="v">4 students, ME 444 (CAD &amp; Prototyping)</span></div>
+      <div><span class="k">Timeframe</span><span class="v">Fall 2025</span></div>
+      <div class="focus"><span class="k">Focus</span><span class="v">Fitting a working crane into a 10-inch box</span></div>
+    </div>
+  </div>
+
+  <div class="media-row three">
+    <figure class="mr-video">
+      <video src="../assets/images/crane/crane-demo.mp4" poster="../assets/images/crane/crane-demo-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="The crane slewing and lifting on demo day"></video>
+      <figcaption class="mono"><span class="live-dot"></span>Demo day</figcaption>
+    </figure>
+    <figure class="mr-tall">
+      <img style="object-position:center 35%" src="../assets/images/crane/crane-prototype.jpg" alt="Finished red 3D-printed tower crane prototype at the demo table">
+      <figcaption class="mono">Final prototype</figcaption>
+    </figure>
+    <figure class="mr-photo fit">
+      <img src="../assets/images/crane/crane-cad.png" alt="Isometric CAD model of the tower crane">
+      <figcaption class="mono">Full assembly in Creo</figcaption>
+    </figure>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">01</div>
+    <div>
+      <h2 class="display">The idea</h2>
+      <p>The brief was to design and build a working action toy that fits in a 10&Prime; &times; 10&Prime; box
+        for under $70. We&rsquo;re all car people, so we took inspiration from the magnet cranes in
+        demolition yards that pick cars up, and from the tower cranes all over West Lafayette. The
+        result is a crane you drive from your phone: spin the arm, drop the magnet, grab something
+        metal, and put it somewhere else. It&rsquo;s aimed at kids around five to eight.</p>
+    </div>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">02</div>
+    <div>
+      <h2 class="display">How it works</h2>
+      <p>Real cranes are much taller than they are wide, which doesn&rsquo;t fit in a 10-inch box. So we
+        made the tower telescope: two sections of different diameters, with the top one sliding inside
+        the bottom, so it stores at 10 inches and extends to about 15 for play.</p>
+      <p>A bearing on top of the tower carries the cab, and a stepper motor turns it through a rigid
+        shaft for full 360° rotation at around 20 rpm. A DC motor drives a spool that lowers and raises
+        an electromagnet on a custom holder. Everything runs off an ESP32 with TMC2209 and DRV8833
+        drivers, controlled through a Blynk app. We modeled it all in Creo and 3D printed every part in
+        PLA, splitting big parts into smaller bolted pieces so one bad print didn&rsquo;t mean reprinting
+        everything.</p>
+    </div>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">03</div>
+    <div>
+      <h2 class="display">What went wrong, and what we learned</h2>
+      <p>The downloaded CAD model of our stepper motor didn&rsquo;t match the real part, so the slew
+        connector and bearing housing had to be redesigned around measured dimensions. It took three
+        full iterations to get the fits right. Close to the end we burnt out a motor driver, so the
+        spool and magnet had to move to physical switches. That actually saved us on demo day, when the
+        Wi-Fi didn&rsquo;t cooperate.</p>
+      <p>The big takeaway: get the electronics working early, alongside the mechanical design, not
+        after it.</p>
+      <div class="stats" style="margin-top:22px;">
+        <div class="stat"><div class="num-big display">360°</div><div class="num-lbl">continuous slewing</div></div>
+        <div class="stat"><div class="num-big display">~20</div><div class="num-lbl">rpm at full speed</div></div>
+        <div class="stat"><div class="num-big display">10&rarr;15&Prime;</div><div class="num-lbl">telescoping tower</div></div>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding-block:12px 0;">
+    <div class="gallery-head mono">Gallery</div>
+    <div class="gallery four">
+      <a class="gtile has-img fit" href="../assets/images/crane/crane-sketch.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-sketch.png" alt="Hand sketch of the original crane concept" loading="lazy"><span class="gcap mono">First concept sketch</span></a>
+      <a class="gtile has-img fit" href="../assets/images/crane/crane-base-cad.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-base-cad.png" alt="CAD of the telescoping crane base" loading="lazy"><span class="gcap mono">CAD: telescoping base</span></a>
+      <a class="gtile has-img fit" href="../assets/images/crane/crane-cab-cad.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-cab-cad.png" alt="CAD of the crane cab and slewing assembly" loading="lazy"><span class="gcap mono">CAD: cab &amp; slewing unit</span></a>
+      <a class="gtile has-img fit" href="../assets/images/crane/crane-circuit.jpg" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-circuit.jpg" alt="Circuit diagram with ESP32, DRV8833 and stepper driver" loading="lazy"><span class="gcap mono">Circuit: ESP32 + drivers</span></a>
+    </div>
+  </section>
+
+  <div class="prevnext mono">
+    <a class="pn-link" href="racecar.html"><span class="pn-k">← PREV CASE STUDY</span><span class="pn-v">Phone-Controlled Mini Race Car</span></a>
+    <a class="pn-link next" href="orchard-robot.html"><span class="pn-k">NEXT CASE STUDY →</span><span class="pn-v">Autonomous Orchard Laser Robot</span></a>
+  </div>
+
+  <footer id="contact">
+    <div class="fgrid">
+      <div class="brand display">Let's build something.</div>
+      <div class="flinks mono">
+        <a href="mailto:akul.ramasubban@gmail.com">akul.ramasubban@gmail.com</a>
+        <a href="https://www.linkedin.com/in/akulramasubban/">LinkedIn</a>
+        <a href="../assets/resume.pdf">Resume ↓</a>
+      </div>
+    </div>
+    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+  </footer>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

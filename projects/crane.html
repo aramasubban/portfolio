@@ -45,24 +45,20 @@
     <h1 class="display">Phone-Controlled Crane Arm</h1>
     <p class="one-liner">&ldquo;The Lifting Line&rdquo;: a toy tower crane that spins 360°, drops an electromagnet on a spool, and runs from a phone. Built with a team of four for ME 444 at Purdue.</p>
     <div class="proj-meta mono">
-      <div><span class="k">Team</span><span class="v">4 students, ME 444 (CAD &amp; Prototyping)</span></div>
+      <div><span class="k">My role</span><span class="v">Electronics integration &amp; payload design (team of 4)</span></div>
       <div><span class="k">Timeframe</span><span class="v">Fall 2025</span></div>
       <div class="focus"><span class="k">Focus</span><span class="v">Fitting a working crane into a 10-inch box</span></div>
     </div>
   </div>
 
-  <div class="media-row three">
-    <figure class="mr-video">
+  <div class="media-row" style="--row-w:700px">
+    <figure style="--ar:0.5625">
       <video src="../assets/images/crane/crane-demo.mp4" poster="../assets/images/crane/crane-demo-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="The crane slewing and lifting on demo day"></video>
       <figcaption class="mono"><span class="live-dot"></span>Demo day</figcaption>
     </figure>
-    <figure class="mr-tall">
-      <img style="object-position:center 35%" src="../assets/images/crane/crane-prototype.jpg" alt="Finished red 3D-printed tower crane prototype at the demo table">
-      <figcaption class="mono">Final prototype</figcaption>
-    </figure>
-    <figure class="mr-photo fit">
-      <img src="../assets/images/crane/crane-cad.png" alt="Isometric CAD model of the tower crane">
-      <figcaption class="mono">Full assembly in Creo</figcaption>
+    <figure style="--ar:0.75">
+      <img src="../assets/images/crane/crane-final.jpg" alt="Finished red 3D-printed tower crane on the demo table with its project poster behind it">
+      <figcaption class="mono">Final prototype at the demo</figcaption>
     </figure>
   </div>
 
@@ -87,8 +83,7 @@
         the bottom, so it stores at 10 inches and extends to about 15 for play.</p>
       <p>A bearing on top of the tower carries the cab, and a stepper motor turns it through a rigid
         shaft for full 360° rotation at around 20 rpm. A DC motor drives a spool that lowers and raises
-        an electromagnet on a custom holder. Everything runs off an ESP32 with TMC2209 and DRV8833
-        drivers, controlled through a Blynk app. We modeled it all in Creo and 3D printed every part in
+        an electromagnet to grab and drop metal objects, all controlled from a phone. We modeled it all in Creo and 3D printed every part in
         PLA, splitting big parts into smaller bolted pieces so one bad print didn&rsquo;t mean reprinting
         everything.</p>
     </div>
@@ -97,14 +92,13 @@
   <div class="proj-body">
     <div class="num mono">03</div>
     <div>
-      <h2 class="display">What went wrong, and what we learned</h2>
-      <p>The downloaded CAD model of our stepper motor didn&rsquo;t match the real part, so the slew
-        connector and bearing housing had to be redesigned around measured dimensions. It took three
-        full iterations to get the fits right. Close to the end we burnt out a motor driver, so the
-        spool and magnet had to move to physical switches. That actually saved us on demo day, when the
-        Wi-Fi didn&rsquo;t cooperate.</p>
-      <p>The big takeaway: get the electronics working early, alongside the mechanical design, not
-        after it.</p>
+      <h2 class="display">My part</h2>
+      <p>I owned all of the electronics integration: getting the ESP32, the TMC2209 stepper driver,
+        the DRV8833 motor driver and the electromagnet working together, packaging it all inside the
+        cab, and wiring it to the Blynk app so the whole crane runs from a phone.</p>
+      <p>I also designed the payload end at the top of the crane: the spool and hoist that raise and
+        lower the electromagnet, and the holder that fastens the magnet to the line, sized so it
+        could reliably pick up and drop the load.</p>
       <div class="stats" style="margin-top:22px;">
         <div class="stat"><div class="num-big display">360°</div><div class="num-lbl">continuous slewing</div></div>
         <div class="stat"><div class="num-big display">~20</div><div class="num-lbl">rpm at full speed</div></div>
@@ -116,7 +110,7 @@
   <section style="padding-block:12px 0;">
     <div class="gallery-head mono">Gallery</div>
     <div class="gallery four">
-      <a class="gtile has-img fit" href="../assets/images/crane/crane-sketch.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-sketch.png" alt="Hand sketch of the original crane concept" loading="lazy"><span class="gcap mono">First concept sketch</span></a>
+      <a class="gtile has-img fit" href="../assets/images/crane/crane-cad.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-cad.png" alt="Isometric CAD model of the tower crane" loading="lazy"><span class="gcap mono">CAD: full assembly in Creo</span></a>
       <a class="gtile has-img fit" href="../assets/images/crane/crane-base-cad.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-base-cad.png" alt="CAD of the telescoping crane base" loading="lazy"><span class="gcap mono">CAD: telescoping base</span></a>
       <a class="gtile has-img fit" href="../assets/images/crane/crane-cab-cad.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-cab-cad.png" alt="CAD of the crane cab and slewing assembly" loading="lazy"><span class="gcap mono">CAD: cab &amp; slewing unit</span></a>
       <a class="gtile has-img fit" href="../assets/images/crane/crane-circuit.jpg" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-circuit.jpg" alt="Circuit diagram with ESP32, DRV8833 and stepper driver" loading="lazy"><span class="gcap mono">Circuit: ESP32 + drivers</span></a>

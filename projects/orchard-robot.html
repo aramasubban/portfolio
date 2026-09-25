@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Autonomous Orchard Spraying Robot — Akul Ramasubban</title>
+<title>Autonomous Orchard Laser Robot — Akul Ramasubban</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,12 +38,12 @@
   </header>
 
   <div class="crumb mono">
-    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Autonomous Orchard Spraying Robot</span>
+    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Autonomous Orchard Laser Robot</span>
   </div>
 
   <div class="proj-head">
-    <h1 class="display">Autonomous Orchard Spraying Robot</h1>
-    <p class="one-liner">Purdue MARS Lab — a sprayer end effector and perception pipeline that treats only diseased foliage.</p>
+    <h1 class="display">Autonomous Orchard Laser Robot</h1>
+    <p class="one-liner">Purdue MARS Lab — a quadruped-mounted arm and perception pipeline for targeted laser treatment in orchards. Work in progress.</p>
     <div class="proj-meta mono">
       <div><span class="k">Role</span><span class="v">Robotics Researcher, Purdue MARS Lab</span></div>
       <div><span class="k">Timeframe</span><span class="v">Summer 2025 — Present</span></div>
@@ -79,8 +79,8 @@
     <div class="num mono">01</div>
     <div>
       <h2 class="display">Problem</h2>
-      <p>Orchard spraying is usually blanket coverage — every plant gets treated whether it
-        needs it or not, which wastes chemical and increases exposure for anything nearby.</p>
+      <p>Orchard treatment is usually blanket spraying: every plant gets chemical whether it needs
+        it or not, which wastes material and increases exposure for everything nearby.</p>
     </div>
   </div>
 
@@ -88,10 +88,12 @@
     <div class="num mono">02</div>
     <div>
       <h2 class="display">Approach</h2>
-      <p>Mounted a sprayer end effector on a robotic arm carried by a Unitree quadruped, then
-        built a perception pipeline on top of DINO and SAM to detect and segment diseased
-        foliage in the camera feed. The segmentation output is converted into targets the arm
-        controller can aim at, so the sprayer only fires on regions flagged as infected.</p>
+      <p>A robotic arm carried by a Unitree quadruped, paired with a perception pipeline built on
+        DINO and SAM to detect and segment diseased foliage in the camera feed. The segmentation
+        output becomes targets the arm controller can aim at. The project started with a
+        precision sprayer on the end of the arm; we've since shifted the scope to a laser end
+        effector, which treats only the flagged regions and removes chemicals from the process
+        entirely.</p>
     </div>
   </div>
 
@@ -99,14 +101,14 @@
     <div class="num mono">03</div>
     <div>
       <h2 class="display">Result</h2>
-      <span class="status-badge mono"><span class="status-dot"></span>In progress — perception pipeline validated on collected orchard imagery; field integration with the arm controller is the current milestone.</span>
+      <span class="status-badge mono"><span class="status-dot"></span>In progress — scope recently shifted from spraying to laser treatment; integrating the laser end effector is the current milestone.</span>
     </div>
   </div>
 
   <section style="padding-block:12px 0;">
     <div class="gallery-head mono">Gallery — to add</div>
     <div class="gallery">
-      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Photo — quadruped + arm + sprayer end effector</span></div>
+      <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Photo — quadruped + arm + laser end effector</span></div>
       <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Diagram — system architecture</span></div>
       <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Output — DINO / SAM segmentation mask</span></div>
       <div class="gtile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="1.5"/><circle cx="8" cy="10.5" r="1.8"/><path d="M3 17l5.5-5.5L12 15l3-3 6 6"/></svg><span class="mono">Diagram — perception → control pipeline</span></div>

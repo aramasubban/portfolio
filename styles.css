@@ -345,9 +345,24 @@ footer{padding-block:40px 56px; border-top:1px solid var(--line);}
 .nda-art img.tesla-logo{width:auto; height:62%; max-height:220px;}
 .nda-tag{position:absolute; left:14px; bottom:14px; font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); padding:3px 8px; background:var(--bg);}
 
-/* project video */
-.demo{display:grid; grid-template-columns:minmax(0,360px) 1fr; gap:48px; align-items:center; padding-block:40px; border-top:1px solid var(--line);}
-.demo video{width:100%; aspect-ratio:9/16; object-fit:cover; display:block; border:1px solid var(--line); background:#000;}
-.demo h2{font-size:clamp(1.4rem,2.6vw,1.9rem); font-weight:600;}
-.demo p{margin-top:14px; color:var(--text-dim); line-height:1.7; max-width:48ch;}
-@media (max-width:900px){ .demo{grid-template-columns:1fr; gap:24px;} .demo video{max-width:360px;} }
+/* project media row: short video beside a photo */
+.media-row{display:grid; grid-template-columns:auto 1fr; gap:20px; margin-block:48px; height:440px;}
+.media-row figure{margin:0; position:relative; border:1px solid var(--line); overflow:hidden; background:#000;}
+.media-row video, .media-row img{display:block; width:100%; height:100%; object-fit:cover;}
+.mr-video{aspect-ratio:9/16; height:100%;}
+.media-row figcaption{
+  position:absolute; left:0; right:0; bottom:0; padding:9px 12px; font-size:0.66rem; letter-spacing:0.04em;
+  color:#eae6da; background:linear-gradient(0deg, rgba(0,0,0,0.72), transparent);
+  display:flex; align-items:center; gap:8px;
+}
+.live-dot{width:7px; height:7px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 3px var(--accent-soft);}
+@media (max-width:900px){
+  .media-row{grid-template-columns:1fr 1.4fr; height:auto;}
+  .mr-video{height:auto;}
+  .mr-photo{aspect-ratio:auto;}
+}
+@media (max-width:560px){
+  .media-row{grid-template-columns:1fr;}
+  .mr-video{max-width:260px; justify-self:center;}
+  .mr-photo{aspect-ratio:4/3;}
+}

@@ -340,3 +340,14 @@ footer{padding-block:40px 56px; border-top:1px solid var(--line);}
   .card.feature{grid-template-columns:1fr;}
   .card.feature .proj-art{border-right:none; border-bottom:1px solid var(--line);}
 }
+
+.nda-art{position:relative;}
+.nda-art img.tesla-logo{width:auto; height:62%; max-height:220px;}
+.nda-tag{position:absolute; left:14px; bottom:14px; font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); padding:3px 8px; background:var(--bg);}
+
+/* project video */
+.demo{display:grid; grid-template-columns:minmax(0,360px) 1fr; gap:48px; align-items:center; padding-block:40px; border-top:1px solid var(--line);}
+.demo video{width:100%; aspect-ratio:9/16; object-fit:cover; display:block; border:1px solid var(--line); background:#000;}
+.demo h2{font-size:clamp(1.4rem,2.6vw,1.9rem); font-weight:600;}
+.demo p{margin-top:14px; color:var(--text-dim); line-height:1.7; max-width:48ch;}
+@media (max-width:900px){ .demo{grid-template-columns:1fr; gap:24px;} .demo video{max-width:360px;} }

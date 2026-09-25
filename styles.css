@@ -206,10 +206,13 @@ footer{padding-block:40px 56px; border-top:1px solid var(--line);}
   display:grid; grid-template-columns:repeat(3,1fr); gap:0;
   border-top:1px solid var(--line); border-bottom:1px solid var(--line); margin-top:32px;
 }
-.proj-meta div{padding:16px 20px; border-right:1px solid var(--line);}
+.proj-meta div{padding:22px 24px; border-right:1px solid var(--line);}
 .proj-meta div:last-child{border-right:none;}
-.proj-meta .k{display:block; font-size:0.64rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-faint); margin-bottom:6px;}
-.proj-meta .v{font-size:0.88rem;}
+.proj-meta .k{display:block; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-faint); margin-bottom:10px;}
+.proj-meta .v{font-family:'Manrope',system-ui,sans-serif; font-size:1.08rem; font-weight:600; line-height:1.4;}
+.proj-meta .focus{background:var(--accent-soft); border-left:2px solid var(--accent);}
+.proj-meta .focus .k{color:var(--accent);}
+.proj-meta .focus .v{font-family:'Unbounded',system-ui,sans-serif; font-size:1.12rem; line-height:1.35;}
 
 .cover{
   margin-block:48px; aspect-ratio:21/9; border:1px solid var(--line);

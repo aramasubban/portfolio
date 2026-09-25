@@ -43,44 +43,50 @@
 
   <div class="proj-head">
     <h1 class="display">Battery Pack Design &amp; Thermal System</h1>
-    <p class="one-liner">Purdue Electric Racing — reworking the pack architecture from cell layout through thermal validation.</p>
+    <p class="one-liner">My time on Purdue Electric Racing&rsquo;s battery team: fitting more energy into less space, keeping it cool, and getting it through tech inspection.</p>
     <div class="proj-meta mono">
       <div><span class="k">Role</span><span class="v">Battery Special Projects, Purdue Electric Racing</span></div>
       <div><span class="k">Timeframe</span><span class="v">Aug 2023 — Dec 2025</span></div>
-      <div><span class="k">Focus</span><span class="v">Mechanical Design, Manufacturing, Testing</span></div>
+      <div class="focus"><span class="k">Focus</span><span class="v">Designing, building &amp; testing battery modules</span></div>
     </div>
   </div>
 
-  <div class="cover logo-art">
-    <img src="../assets/images/battery-pack/per-logo.webp" alt="Purdue Electric Racing logo">
+  <div class="cover photo-cover">
+    <img style="object-position:center 62%" src="../assets/images/battery-pack/per-car.jpg" alt="Purdue Electric Racing's 2025 Formula SAE electric car at dusk">
   </div>
 
   <div class="proj-body">
     <div class="num mono">01</div>
     <div>
-      <h2 class="display">Problem</h2>
-      <p>The prior season's pack ran conservative cell spacing and an off-the-shelf thermal
-        interface that left real energy density on the table and made the enclosure hard to
-        seal cleanly for tech inspection.</p>
+      <h2 class="display">The challenge</h2>
+      <p>A Formula SAE battery pack has to hold as much energy as possible, stay cool while the
+        car is being pushed hard, and pass a strict tech inspection before it&rsquo;s allowed on
+        track. Every millimeter and every degree counts.</p>
     </div>
   </div>
 
   <div class="proj-body">
     <div class="num mono">02</div>
     <div>
-      <h2 class="display">Approach</h2>
-      <p>Modeled pack behavior in Simscape before touching hardware, then redesigned the module
-        layout to tighten cell spacing without compromising thermal paths. Paired the new layout
-        with a custom thermal interface/spacer system, and validated cooling performance with an
-        Arduino-instrumented test plate before committing to the final enclosure.</p>
+      <h2 class="display">What I worked on</h2>
+      <p>I started in simulation, building a Simscape model of the pack so we could see state of
+        charge, heat generation and cell temperatures before building anything. From there I
+        reworked the modules to take up less room: slimmer busbars sized from current and
+        resistivity calculations, a tighter terminal busbar bend, and a staggered layout that
+        made wire bonding easier.</p>
+      <p>Cooling came next. The cells can&rsquo;t touch the cooling plate directly, so I designed a
+        spacer and thermal interface system and picked the TIM thickness from a thermal
+        conductivity analysis. I built an Arduino-based rig to check the cooling plate against
+        edge cases, and designed the waterproof enclosure that sealed it all up.</p>
     </div>
   </div>
 
   <div class="proj-body">
     <div class="num mono">03</div>
     <div>
-      <h2 class="display">Result</h2>
-      <div class="stats">
+      <h2 class="display">How it turned out</h2>
+      <p>The pack helped the team to a top-10 finish.</p>
+      <div class="stats" style="margin-top:22px;">
         <div class="stat"><div class="num-big display">30%</div><div class="num-lbl">increase in pack energy density</div></div>
         <div class="stat"><div class="num-big display">10%</div><div class="num-lbl">gain in cooling performance</div></div>
         <div class="stat"><div class="num-big display">100%</div><div class="num-lbl">leak-free at tech inspection</div></div>

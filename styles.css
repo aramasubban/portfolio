@@ -331,13 +331,14 @@ footer{padding-block:40px 56px; border-top:1px solid var(--line);}
 .nda-art .stamp{font-size:1.05rem; right:12px; bottom:14px;}
 .card.feature{grid-column:1 / -1; display:grid; grid-template-columns:1fr 1fr;}
 .card.feature .proj-art{border-bottom:none; border-right:1px solid var(--line); aspect-ratio:auto; min-height:300px;}
+.card.feature .proj-art.has-photo img.photo{position:absolute; inset:0;}
 
 @media (max-width:900px){
   .nda-panel{grid-template-columns:1fr; padding:24px;}
   .work-list{grid-template-columns:1fr;}
   .work-item, .work-item:nth-child(even){padding:26px 0; border-left:none;}
   .card.feature{grid-template-columns:1fr;}
-  .card.feature .proj-art{border-right:none; border-bottom:1px solid var(--line);}
+  .card.feature .proj-art{border-right:none; border-bottom:1px solid var(--line); aspect-ratio:4/3; min-height:0;}
 }
 
 .nda-art{position:relative;}

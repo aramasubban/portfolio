@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quadruped Robot — Akul Ramasubban</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand display" href="../index.html">AKUL R.<span class="dot">/</span></a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../assets/resume.pdf">Resume</a>
+      <div class="nav-contact">
+        <button class="contact-toggle" type="button" aria-haspopup="true" aria-expanded="false">Contact</button>
+        <div class="contact-panel" role="menu">
+          <a href="mailto:akul.ramasubban@gmail.com" role="menuitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M4 6.5l8 6 8-6"/></svg>
+            akul.ramasubban@gmail.com
+          </a>
+          <a href="tel:+16503137267" role="menuitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 4h4l1.5 4-2 2c1 2.5 3 4.5 5.5 5.5l2-2 4 1.5v4c0 .8-.7 1.5-1.5 1.5C10.5 20.5 3.5 13.5 3.5 5.5 3.5 4.7 4.2 4 5 4z"/></svg>
+            (650) 313-7267
+          </a>
+          <a href="https://www.linkedin.com/in/akulramasubban/" target="_blank" rel="noopener" role="menuitem">
+            <span class="badge">in</span>
+            linkedin.com/in/akulramasubban
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="crumb mono">
+    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Quadruped Robot</span>
+  </div>
+
+  <div class="proj-head">
+    <h1 class="display">Quadruped Robot</h1>
+    <p class="one-liner">A small quadruped built by the Purdue Humanoid Robotics Club, where I lead the quadruped project.</p>
+    <div class="proj-meta mono">
+      <div><span class="k">Role</span><span class="v">Quadruped Project Lead</span></div>
+      <div><span class="k">Timeframe</span><span class="v">2026 — Present</span></div>
+      <div class="focus"><span class="k">Focus</span><span class="v">Design validation, electronics integration &amp; simulation</span></div>
+    </div>
+  </div>
+
+  <div class="media-row" style="--row-w:1100px">
+    <figure style="--ar:1.641">
+      <video src="../assets/images/quadruped/mujoco-sim.mp4" poster="../assets/images/quadruped/mujoco-sim-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="MuJoCo simulation of a single spring-assisted quadruped leg"></video>
+      <figcaption class="mono"><span class="live-dot"></span>Leg assembly in MuJoCo</figcaption>
+    </figure>
+    <figure style="--ar:1.213">
+      <img src="../assets/images/quadruped/quadruped-iso.png" alt="Isometric CAD render of the quadruped robot with four linkage legs">
+      <figcaption class="mono">Full-body CAD</figcaption>
+    </figure>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">01</div>
+    <div>
+      <h2 class="display">The Project</h2>
+      <p>The quadruped is a team build inside Purdue's Humanoid Robotics Club. The design,
+        CAD and simulation work on this page is the team's &mdash; I lead the project and work
+        alongside everyone on it.</p>
+    </div>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">02</div>
+    <div>
+      <h2 class="display">My Role</h2>
+      <p>My main job is design validation: checking the team's leg concepts before we commit to
+        hardware. I also handle electronics integration and help build and run the simulation
+        models we use to compare designs.</p>
+    </div>
+  </div>
+
+  <div class="proj-body">
+    <div class="num mono">03</div>
+    <div>
+      <h2 class="display">Exploring Leg Designs</h2>
+      <p>We're weighing several leg designs side by side, including a spring-assisted leg and a
+        linkage-driven leg. Each one goes into MuJoCo as a standalone leg assembly, so we can
+        see how it moves and loads up before it goes on the full robot. Work in progress.</p>
+    </div>
+  </div>
+
+  <section style="padding-block:12px 0;">
+    <div class="gallery-head mono">Leg concepts &amp; full-body CAD</div>
+    <div class="gallery">
+      <a class="gtile has-img fit" href="../assets/images/quadruped/leg-spring.png" target="_blank" rel="noopener"><img src="../assets/images/quadruped/leg-spring.png" alt="CAD render of a spring-assisted quadruped leg with a hip motor" loading="lazy"><span class="gcap mono">Concept &mdash; spring-assisted leg</span></a>
+      <a class="gtile has-img fit" href="../assets/images/quadruped/leg-linkage.png" target="_blank" rel="noopener"><img src="../assets/images/quadruped/leg-linkage.png" alt="CAD render of a linkage-driven quadruped leg with a geared hip actuator" loading="lazy"><span class="gcap mono">Concept &mdash; linkage-driven leg</span></a>
+      <a class="gtile has-img fit" href="../assets/images/quadruped/quadruped-side.png" target="_blank" rel="noopener"><img src="../assets/images/quadruped/quadruped-side.png" alt="Side-view CAD render of the full quadruped robot" loading="lazy"><span class="gcap mono">Full body &mdash; side view</span></a>
+    </div>
+  </section>
+
+
+  <div class="prevnext mono">
+    <a class="pn-link" href="battery-pack.html"><span class="pn-k">← PREV CASE STUDY</span><span class="pn-v">Battery Pack Design &amp; Thermal System</span></a>
+    <a class="pn-link next" href="crane.html"><span class="pn-k">NEXT CASE STUDY →</span><span class="pn-v">Phone-Controlled Crane Arm</span></a>
+  </div>
+
+  <footer id="contact">
+    <div class="fgrid">
+      <div class="brand display">Let's build something.</div>
+      <div class="flinks mono">
+        <a href="mailto:akul.ramasubban@gmail.com">akul.ramasubban@gmail.com</a>
+        <a href="https://www.linkedin.com/in/akulramasubban/">LinkedIn</a>
+        <a href="../assets/resume.pdf">Resume ↓</a>
+      </div>
+    </div>
+    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+  </footer>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

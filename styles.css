@@ -166,6 +166,7 @@ section{padding-block:20px 72px;}
 .id-badge b{color:var(--accent);}
 .card-body{padding:22px 22px 24px; display:flex; flex-direction:column; flex:1;}
 .card h3{font-size:1.16rem; font-weight:700; margin-bottom:10px;}
+.card-role{font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); margin:-4px 0 12px;}
 .card p{font-size:0.9rem; line-height:1.62; color:var(--text-dim); flex:1;}
 .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;}
 .chip{font-size:0.64rem; letter-spacing:0.04em; padding:4px 9px; border:1px solid var(--line-strong); color:var(--text-dim);}

@@ -36,7 +36,7 @@
 }
 
 *{box-sizing:border-box;}
-html,body{background:var(--bg);}
+html,body{background:var(--bg); overflow-x:clip;}
 body{
   margin:0; color:var(--text);
   font-family:'Manrope',system-ui,-apple-system,sans-serif;
@@ -56,7 +56,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-o
 .wrap{max-width:1320px; margin:0 auto; padding-inline:clamp(20px,5vw,64px);}
 
 /* header */
-header{display:flex; align-items:center; justify-content:space-between; padding-block:26px;}
+header{position:relative; display:flex; align-items:center; justify-content:space-between; padding-block:26px;}
 .brand{font-size:0.95rem; font-weight:700; letter-spacing:0.01em; text-decoration:none;}
 .brand .dot{color:var(--accent);}
 nav{display:flex; gap:32px; flex-wrap:wrap; align-items:center;}
@@ -110,6 +110,8 @@ nav a:hover{color:var(--accent); border-color:var(--accent);}
 }
 .eyebrow::before{content:""; width:26px; height:1px; background:var(--accent);}
 .hero h1{font-size:clamp(2.4rem, 5.6vw, 4.6rem); font-weight:700; line-height:1.02; letter-spacing:-0.01em;}
+.hero > *{min-width:0;}
+@media (max-width:359px){ .hero h1{font-size:2rem;} }
 .hero .statement{margin-top:20px; font-size:clamp(1.3rem, 2.6vw, 1.9rem); font-weight:600; line-height:1.28; max-width:16ch;}
 .hero .statement em{color:var(--accent); font-style:normal;}
 .hero p.lede{max-width:52ch; margin-top:24px; font-size:1.02rem; line-height:1.7; color:var(--text-dim);}
@@ -305,7 +307,10 @@ footer{padding-block:40px 56px; border-top:1px solid var(--line);}
   .gallery{grid-template-columns:repeat(2,1fr);}
   .prevnext{grid-template-columns:1fr;}
   .skills-grid{grid-template-columns:repeat(2,1fr);}
-  .contact-panel{right:auto; left:0;}
+  /* anchor the panel to the full header width so it can't run off the right edge */
+  .nav-contact{position:static;}
+  .contact-panel{left:0; right:0; top:calc(100% - 10px); min-width:0;}
+  .contact-panel a{overflow-wrap:anywhere;}
 }
 
 /* ---- tesla / NDA page ---- */
@@ -397,4 +402,6 @@ footer{padding-block:40px 56px; border-top:1px solid var(--line);}
   .wip-inner{grid-template-columns:1fr; padding:32px 24px; gap:24px;}
   .wip-art{order:2;}
 }
+.wip-inner > *{min-width:0;}
+@media (max-width:359px){ .wip-title{font-size:2.1rem;} }
 .gallery.two{grid-template-columns:repeat(2,1fr);}

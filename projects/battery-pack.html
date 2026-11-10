@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Purdue Electric Racing — Akul Ramasubban</title>
+<meta name="description" content="Responsible engineer for Purdue Electric Racing's battery module: +30% specific energy, 11% lighter cooling, 1.075 in narrower pack.">
+<meta property="og:title" content="Purdue Electric Racing — Akul Ramasubban">
+<meta property="og:description" content="Responsible engineer for Purdue Electric Racing's battery module: +30% specific energy, 11% lighter cooling, 1.075 in narrower pack.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=7">
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -19,8 +22,8 @@
 <body>
 <div class="wrap">
   <header>
-    <a class="brand display" href="../index.html">AKUL R.<span class="dot">/</span></a>
-    <nav class="mono">
+    <a class="brand" href="../index.html">Akul Ramasubban</a>
+    <nav>
       <a href="../index.html#work">Work</a>
       <a href="../index.html#about">About</a>
       <a href="../assets/resume.pdf" data-goatcounter-click="resume-download">Resume</a>
@@ -44,94 +47,116 @@
     </nav>
   </header>
 
-  <div class="crumb mono">
-    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Purdue Electric Racing</span>
+  <div class="cs-bar"><a href="../index.html#work">← All work</a><span class="ix">02 / 07</span></div>
+  <h1 class="cs-title">Purdue Electric Racing</h1>
+  <div class="cs-intro">
+    <p class="cs-lede">Two and a half years on Purdue Electric Racing&rsquo;s battery team: first as the responsible engineer for the battery module, then as Battery Senior Advisor. More energy in less space, cooler cells, and a pack that passed tech inspection without a single leak.</p>
+    <dl class="cs-spec"><div><dt>Role</dt><dd>Responsible Engineer, Battery Module &rarr; Battery Senior Advisor</dd></div><div><dt>When</dt><dd>Aug 2023 — Jan 2026</dd></div><div><dt>Owned</dt><dd>Module architecture, thermal interface, cooling validation, enclosure</dd></div><div><dt>Tools</dt><dd>SolidWorks, Simscape, tolerance analysis, Arduino, CFD</dd></div></dl>
   </div>
-
-  <div class="proj-head">
-    <h1 class="display">Purdue Electric Racing</h1>
-    <p class="one-liner">My time on Purdue Electric Racing&rsquo;s battery team: fitting more energy into less space, keeping it cool, and getting it through tech inspection.</p>
-    <div class="proj-meta mono">
-      <div><span class="k">Role</span><span class="v">Battery Senior Advisor</span></div>
-      <div><span class="k">Timeframe</span><span class="v">Aug 2023 — Dec 2025</span></div>
-      <div class="focus"><span class="k">Focus</span><span class="v">Designing, building &amp; testing battery modules</span></div>
+    <div class="cs-row cs-hero">
+      <figure style="--ar:1.778"><a class="ph" href="../assets/images/battery-pack/per-car.jpg"><img src="../assets/images/battery-pack/per-car.jpg" alt="Purdue Electric Racing's 2025 Formula SAE electric car at dusk"></a><figcaption><b>Fig. 1</b> The 2025 car at dusk.</figcaption></figure>
     </div>
-  </div>
 
-  <div class="cover photo-cover">
-    <img style="object-position:center 62%" src="../assets/images/battery-pack/per-car.jpg" alt="Purdue Electric Racing's 2025 Formula SAE electric car at dusk">
-  </div>
+  <section class="cs-band">
+    <div class="k">The headline numbers</div>
+    <p class="note">What the module and cooling redesign changed on the car.</p>
+    <div class="cs-nums"><div><b>+30%</b><span>specific energy (Wh/kg) from the module redesign</span></div><div><b>&minus;11%</b><span>cooling-system weight with plates as structural walls</span></div><div><b>1.075&Prime;</b><span>taken out of the pack&rsquo;s width</span></div></div>
+  </section>
 
-  <div class="proj-body">
-    <div class="num mono">01</div>
-    <div>
-      <h2 class="display">The challenge</h2>
-      <p>A Formula SAE battery pack has to hold as much energy as possible, stay cool while the
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>01</span><h2>The challenge</h2></div>
+    <div class="cs-ch-b"><p>A Formula SAE battery pack has to hold as much energy as possible, stay cool while the
         car is being pushed hard, and pass a strict tech inspection before it&rsquo;s allowed on
-        track. Every millimeter and every degree counts.</p>
-    </div>
-  </div>
+        track. Every millimeter, gram and degree counts.</p>
+      <p>As the module&rsquo;s responsible engineer, I owned its design end to end: the architecture,
+        the busbars, the thermal interface, and making sure it met the rules and could actually be
+        built by the team.</p></div>
+  </section>
 
-  <div class="proj-body">
-    <div class="num mono">02</div>
-    <div>
-      <h2 class="display">What I worked on</h2>
-      <p>I started in simulation, building a Simscape model of the pack so we could see state of
-        charge, heat generation and cell temperatures before building anything. From there I
-        reworked the modules to take up less room: slimmer busbars sized from current and
-        resistivity calculations, a tighter terminal busbar bend, and a staggered layout that
-        made wire bonding easier.</p>
-      <p>Cooling came next. The cells can&rsquo;t touch the cooling plate directly, so I designed a
-        spacer and thermal interface system and picked the TIM thickness from a thermal
-        conductivity analysis. I built an Arduino-based rig to check the cooling plate against
-        edge cases, and designed the waterproof enclosure that sealed it all up.</p>
-    </div>
-  </div>
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>02</span><h2>Module architecture</h2></div>
+    <div class="cs-ch-b"><p>I led the redesign of the battery module to make it stronger and lighter per kilowatt-hour.
+        The key move was rerouting inertial loads around the cell cans instead of through them, and I
+        verified the new architecture against the FSAE rules with hand calculations before anything was
+        built. The result was a <strong>30% increase in specific energy</strong>, measured in Wh/kg.</p>
+      <p>Inside the module, I made the busbars slimmer, sized from current and resistivity calculations,
+        and opened up the terminal busbar&rsquo;s bend radius to cut vertical height. I also staggered
+        the busbar layout so wire bonding was easier and the thermistor data more reliable.</p></div>
+  </section>
 
-  <div class="proj-body">
-    <div class="num mono">03</div>
-    <div>
-      <h2 class="display">How it turned out</h2>
-      <p>The pack helped the team to a top-10 finish.</p>
-      <div class="stats" style="margin-top:22px;">
-        <div class="stat"><div class="num-big display">30%</div><div class="num-lbl">increase in pack energy density</div></div>
-        <div class="stat"><div class="num-big display">10%</div><div class="num-lbl">gain in cooling performance</div></div>
-        <div class="stat"><div class="num-big display">100%</div><div class="num-lbl">leak-free at tech inspection</div></div>
-      </div>
+  <section class="cs-media">
+    <div class="cs-media-h"><h2>Design</h2><span>CAD and simulation</span></div>
+    <div class="cs-row">
+      <figure style="--ar:1.112"><a class="ph" href="../assets/images/battery-pack/busbar-cad.jpg"><img src="../assets/images/battery-pack/busbar-cad.jpg" alt="CAD of battery module showing terminal busbar and staggered busbars" loading="lazy"></a><figcaption><b>Fig. 2</b> Module busbars and terminal busbar.</figcaption></figure>
+      <figure style="--ar:1.741"><a class="ph" href="../assets/images/battery-pack/spacers-tim-cad.jpg"><img src="../assets/images/battery-pack/spacers-tim-cad.jpg" alt="CAD of battery module showing spacers and thermal interface material layer" loading="lazy"></a><figcaption><b>Fig. 3</b> Spacers and thermal interface material.</figcaption></figure>
     </div>
-  </div>
-
-  <section style="padding-block:12px 0;">
-    <div class="gallery-head mono">Gallery</div>
-    <div class="gallery">
-      <a class="gtile has-img fit" href="../assets/images/battery-pack/busbar-cad.jpg" target="_blank" rel="noopener"><img src="../assets/images/battery-pack/busbar-cad.jpg" alt="CAD of battery module showing terminal busbar and staggered busbars" loading="lazy"><span class="gcap mono">CAD — module busbars &amp; terminal busbar</span></a>
-      <a class="gtile has-img fit" href="../assets/images/battery-pack/spacers-tim-cad.jpg" target="_blank" rel="noopener"><img src="../assets/images/battery-pack/spacers-tim-cad.jpg" alt="CAD of battery module showing spacers and thermal interface material layer" loading="lazy"><span class="gcap mono">CAD — spacers &amp; thermal interface material</span></a>
-      <a class="gtile has-img" href="../assets/images/battery-pack/pack-enclosure.jpg" target="_blank" rel="noopener"><img style="object-position:center 40%" src="../assets/images/battery-pack/pack-enclosure.jpg" alt="Assembled battery pack in its enclosure on a lift cart" loading="lazy"><span class="gcap mono">Assembled pack — in enclosure</span></a>
-      <a class="gtile has-img fit" href="../assets/images/battery-pack/simscape-model.jpg" target="_blank" rel="noopener"><img src="../assets/images/battery-pack/simscape-model.jpg" alt="Simscape equivalent-circuit battery model block diagram" loading="lazy"><span class="gcap mono">Simscape — ECM battery model</span></a>
-      <a class="gtile has-img" href="../assets/images/battery-pack/module-assembled.jpg" target="_blank" rel="noopener"><img src="../assets/images/battery-pack/module-assembled.jpg" alt="Assembled battery module on a lift table" loading="lazy"><span class="gcap mono">Assembled module — side view</span></a>
-      <a class="gtile has-img" href="../assets/images/battery-pack/cooling-plate.jpg" target="_blank" rel="noopener"><img src="../assets/images/battery-pack/cooling-plate.jpg" alt="Battery module cooling plate on a workbench" loading="lazy"><span class="gcap mono">Cooling plate — bench build</span></a>
+    <div class="cs-row">
+      <figure style="--ar:2.332"><a class="ph" href="../assets/images/battery-pack/simscape-model.jpg"><img src="../assets/images/battery-pack/simscape-model.jpg" alt="Simscape equivalent-circuit battery model block diagram" loading="lazy"></a><figcaption><b>Fig. 4</b> Simscape equivalent-circuit battery model.</figcaption></figure>
     </div>
   </section>
 
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>03</span><h2>Thermal interface &amp; cooling</h2></div>
+    <div class="cs-ch-b"><p>The cells can&rsquo;t touch the cooling plate directly, so I designed a thermal interface and
+        spacer system that handles cooling, electrical isolation and assembly fit at once. I used
+        tolerance analysis and material selection to control how much the thermal pads compress,
+        and picked the TIM thickness from a thermal conductivity analysis. That system improved
+        battery performance by <strong>10%</strong>.</p>
+      <p>I then integrated the cooling plates as structural walls of the pack instead of separate
+        parts. That cut cooling-system weight by <strong>11%</strong> and the pack&rsquo;s width by
+        <strong>1.075 inches</strong>, with FR4 barriers keeping the cells aligned and electrically
+        insulated through assembly.</p></div>
+  </section>
 
-  <div class="prevnext mono">
-    <a class="pn-link" href="tesla.html"><span class="pn-k">← PREV CASE STUDY</span><span class="pn-v">Tesla</span></a>
-    <a class="pn-link next" href="quadruped.html"><span class="pn-k">NEXT CASE STUDY →</span><span class="pn-v">Humanoid Robot Club</span></a>
-  </div>
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>04</span><h2>Validation</h2></div>
+    <div class="cs-ch-b"><p>Before building anything, I modeled the pack in Simscape to see state of charge, heat
+        generation and cell temperatures under load.</p>
+      <p>To check the real hardware, I built a cooling-plate validation rig that tests thermal
+        performance under representative cell compression, with Arduino logging of temperature and
+        coolant flow. I validated <strong>three plate designs</strong>, and all of them landed within
+        <strong>1.2 &deg;C</strong> of the CFD predictions.</p></div>
+  </section>
+
+  <section class="cs-band">
+    <div class="k">How it turned out</div>
+    <p class="note">The pack helped the team to a top-10 finish.</p>
+    <div class="cs-nums"><div><b>10%</b><span>better battery performance from the thermal interface</span></div><div><b>1.2&deg;C</b><span>max gap between rig data and CFD, across 3 plates</span></div><div><b>0</b><span>leaks at technical inspection</span></div></div>
+  </section>
+
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>05</span><h2>Enclosure &amp; tech</h2></div>
+    <div class="cs-ch-b"><p>I designed the waterproof enclosure that sealed the pack. It passed technical inspection
+        with no leaks, which cleared the car to run and contributed to the team&rsquo;s top-10 finish.</p></div>
+  </section>
+
+  <section class="cs-media">
+    <div class="cs-media-h"><h2>Build</h2><span>From the bench to the car</span></div>
+    <div class="cs-row">
+      <figure style="--ar:0.75"><a class="ph" href="../assets/images/battery-pack/module-assembled.jpg"><img src="../assets/images/battery-pack/module-assembled.jpg" alt="Assembled battery module on a lift table" loading="lazy"></a><figcaption><b>Fig. 5</b> Assembled module, side view.</figcaption></figure>
+      <figure style="--ar:0.75"><a class="ph" href="../assets/images/battery-pack/cooling-plate.jpg"><img src="../assets/images/battery-pack/cooling-plate.jpg" alt="Battery module cooling plate on a workbench" loading="lazy"></a><figcaption><b>Fig. 6</b> Cooling plate on the bench.</figcaption></figure>
+      <figure style="--ar:0.75"><a class="ph" href="../assets/images/battery-pack/pack-enclosure.jpg"><img src="../assets/images/battery-pack/pack-enclosure.jpg" alt="Assembled battery pack in its enclosure on a lift cart" style="object-position:center 40%" loading="lazy"></a><figcaption><b>Fig. 7</b> Assembled pack in its enclosure.</figcaption></figure>
+    </div>
+  </section>
+
+  <a class="cs-next" href="quadruped.html">
+    <span><span class="k">Next project</span><span class="t">Humanoid Robot Club <span class="ar">→</span></span></span>
+    <span class="ph"><img src="../assets/images/quadruped/quadruped-built.jpg" alt="" loading="lazy"></span>
+  </a>
 
   <footer id="contact">
     <div class="fgrid">
-      <div class="brand display">Let's build something.</div>
-      <div class="flinks mono">
+      <div class="brand">Let's build something.</div>
+      <div class="flinks">
         <a href="mailto:akul.ramasubban@gmail.com" data-goatcounter-click="email-click">akul.ramasubban@gmail.com</a>
         <a href="https://www.linkedin.com/in/akulramasubban/" data-goatcounter-click="linkedin-click">LinkedIn</a>
         <a href="../assets/resume.pdf" data-goatcounter-click="resume-download">Resume ↓</a>
       </div>
     </div>
-    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+    <div class="fprint">© 2026 Akul Ramasubban — San Francisco, CA</div>
   </footer>
 </div>
-<script src="../script.js"></script>
+<script src="../script.js?v=7"></script>
 <script data-goatcounter="https://akram.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

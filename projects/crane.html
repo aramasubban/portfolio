@@ -3,11 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Phone-Controlled Crane Arm — Akul Ramasubban</title>
+<title>Phone-Controlled Crane — Akul Ramasubban</title>
+<meta name="description" content="A phone-controlled toy tower crane for ME 444: telescoping tower, 360° slewing, electromagnet hoist.">
+<meta property="og:title" content="Phone-Controlled Crane — Akul Ramasubban">
+<meta property="og:description" content="A phone-controlled toy tower crane for ME 444: telescoping tower, 360° slewing, electromagnet hoist.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=7">
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -19,8 +22,8 @@
 <body>
 <div class="wrap">
   <header>
-    <a class="brand display" href="../index.html">AKUL R.<span class="dot">/</span></a>
-    <nav class="mono">
+    <a class="brand" href="../index.html">Akul Ramasubban</a>
+    <nav>
       <a href="../index.html#work">Work</a>
       <a href="../index.html#about">About</a>
       <a href="../assets/resume.pdf" data-goatcounter-click="resume-download">Resume</a>
@@ -44,104 +47,94 @@
     </nav>
   </header>
 
-  <div class="crumb mono">
-    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Phone-Controlled Crane Arm</span>
+  <div class="cs-bar"><a href="../index.html#work">← All work</a><span class="ix">05 / 07</span></div>
+  <h1 class="cs-title">Phone-Controlled Crane</h1>
+  <div class="cs-intro">
+    <p class="cs-lede">&ldquo;The Lifting Line&rdquo;: a toy tower crane that spins 360°, drops an electromagnet on a spool, and runs from a phone. Built with a team of four for ME 444 at Purdue.</p>
+    <dl class="cs-spec"><div><dt>Role</dt><dd>Electronics integration &amp; payload design</dd></div><div><dt>Team</dt><dd>4 people, ME 444</dd></div><div><dt>When</dt><dd>Fall 2025</dd></div><div><dt>Budget</dt><dd>Under $70 to build; est. $50 retail</dd></div><div><dt>Focus</dt><dd>Fitting a working crane into a 10-inch box</dd></div></dl>
   </div>
-
-  <div class="proj-head">
-    <h1 class="display">Phone-Controlled Crane Arm</h1>
-    <p class="one-liner">&ldquo;The Lifting Line&rdquo;: a toy tower crane that spins 360°, drops an electromagnet on a spool, and runs from a phone. Built with a team of four for ME 444 at Purdue.</p>
-    <div class="proj-meta mono">
-      <div><span class="k">My role</span><span class="v">Electronics integration &amp; payload design (team of 4)</span></div>
-      <div><span class="k">Timeframe</span><span class="v">Fall 2025</span></div>
-      <div class="focus"><span class="k">Focus</span><span class="v">Fitting a working crane into a 10-inch box</span></div>
+    <div class="cs-row cs-hero">
+      <figure style="--ar:0.5625"><div class="ph"><video src="../assets/images/crane/crane-demo.mp4" poster="../assets/images/crane/crane-demo-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="The crane slewing and lifting on demo day"></video><span class="vid-tag">Video</span></div><figcaption><b>Fig. 1</b> Demo day.</figcaption></figure>
+      <figure style="--ar:0.75"><a class="ph" href="../assets/images/crane/crane-final.jpg"><img src="../assets/images/crane/crane-final.jpg" alt="Finished red 3D-printed tower crane on the demo table"></a><figcaption><b>Fig. 2</b> Final prototype at the demo.</figcaption></figure>
+      <figure style="--ar:1.901"><a class="ph" href="../assets/images/crane/crane-cab-cad.png"><img src="../assets/images/crane/crane-cab-cad.png" alt="CAD of the crane cab and slewing assembly" loading="lazy"></a><figcaption><b>Fig. 3</b> Cab and slewing unit in Creo.</figcaption></figure>
     </div>
-  </div>
 
-  <div class="media-row" style="--row-w:700px">
-    <figure style="--ar:0.5625">
-      <video src="../assets/images/crane/crane-demo.mp4" poster="../assets/images/crane/crane-demo-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="The crane slewing and lifting on demo day"></video>
-      <figcaption class="mono"><span class="live-dot"></span>Demo day</figcaption>
-    </figure>
-    <figure style="--ar:0.75">
-      <img src="../assets/images/crane/crane-final.jpg" alt="Finished red 3D-printed tower crane on the demo table with its project poster behind it">
-      <figcaption class="mono">Final prototype at the demo</figcaption>
-    </figure>
-  </div>
-
-  <div class="proj-body">
-    <div class="num mono">01</div>
-    <div>
-      <h2 class="display">The idea</h2>
-      <p>The brief was to design and build a working action toy that fits in a 10&Prime; &times; 10&Prime; box
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>01</span><h2>The idea</h2></div>
+    <div class="cs-ch-b"><p>The brief was to design and build a working action toy that fits in a 10&Prime; &times; 10&Prime; box
         for under $70. We&rsquo;re all car people, so we took inspiration from the magnet cranes in
         demolition yards that pick cars up, and from the tower cranes all over West Lafayette. The
         result is a crane you drive from your phone: spin the arm, drop the magnet, grab something
-        metal, and put it somewhere else. It&rsquo;s aimed at kids around five to eight.</p>
-    </div>
-  </div>
+        metal, and put it somewhere else. It&rsquo;s aimed at kids around five to eight.</p></div>
+  </section>
 
-  <div class="proj-body">
-    <div class="num mono">02</div>
-    <div>
-      <h2 class="display">How it works</h2>
-      <p>Real cranes are much taller than they are wide, which doesn&rsquo;t fit in a 10-inch box. So we
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>02</span><h2>How it works</h2></div>
+    <div class="cs-ch-b"><p>Real cranes are much taller than they are wide, which doesn&rsquo;t fit in a 10-inch box. So we
         made the tower telescope: two sections of different diameters, with the top one sliding inside
         the bottom, so it stores at 10 inches and extends to about 15 for play.</p>
       <p>A bearing on top of the tower carries the cab, and a stepper motor turns it through a rigid
         shaft for full 360° rotation at around 20 rpm. A DC motor drives a spool that lowers and raises
         an electromagnet to grab and drop metal objects, all controlled from a phone. We modeled it all in Creo and 3D printed every part in
         PLA, splitting big parts into smaller bolted pieces so one bad print didn&rsquo;t mean reprinting
-        everything.</p>
-    </div>
-  </div>
+        everything.</p></div>
+  </section>
 
-  <div class="proj-body">
-    <div class="num mono">03</div>
-    <div>
-      <h2 class="display">My part</h2>
-      <p>I owned all of the electronics integration: getting the ESP32, the TMC2209 stepper driver,
+  <section class="cs-band">
+    <div class="k">By the numbers</div>
+    
+    <div class="cs-nums"><div><b>360°</b><span>continuous slewing</span></div><div><b>~20</b><span>rpm at full speed</span></div><div><b>10→15″</b><span>telescoping tower</span></div></div>
+  </section>
+
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>03</span><h2>My part</h2></div>
+    <div class="cs-ch-b"><p>I owned all of the electronics integration: getting the ESP32, the TMC2209 stepper driver,
         the DRV8833 motor driver and the electromagnet working together, packaging it all inside the
         cab, and wiring it to the Blynk app so the whole crane runs from a phone.</p>
       <p>I also designed the payload end at the top of the crane: the spool and hoist that raise and
         lower the electromagnet, and the holder that fastens the magnet to the line, sized so it
-        could reliably pick up and drop the load.</p>
-      <div class="stats" style="margin-top:22px;">
-        <div class="stat"><div class="num-big display">360°</div><div class="num-lbl">continuous slewing</div></div>
-        <div class="stat"><div class="num-big display">~20</div><div class="num-lbl">rpm at full speed</div></div>
-        <div class="stat"><div class="num-big display">10&rarr;15&Prime;</div><div class="num-lbl">telescoping tower</div></div>
-      </div>
-    </div>
-  </div>
+        could reliably pick up and drop the load.</p></div>
+  </section>
 
-  <section style="padding-block:12px 0;">
-    <div class="gallery-head mono">Gallery</div>
-    <div class="gallery four">
-      <a class="gtile has-img fit" href="../assets/images/crane/crane-cad.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-cad.png" alt="Isometric CAD model of the tower crane" loading="lazy"><span class="gcap mono">CAD: full assembly in Creo</span></a>
-      <a class="gtile has-img fit" href="../assets/images/crane/crane-base-cad.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-base-cad.png" alt="CAD of the telescoping crane base" loading="lazy"><span class="gcap mono">CAD: telescoping base</span></a>
-      <a class="gtile has-img fit" href="../assets/images/crane/crane-cab-cad.png" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-cab-cad.png" alt="CAD of the crane cab and slewing assembly" loading="lazy"><span class="gcap mono">CAD: cab &amp; slewing unit</span></a>
-      <a class="gtile has-img fit" href="../assets/images/crane/crane-circuit.jpg" target="_blank" rel="noopener"><img src="../assets/images/crane/crane-circuit.jpg" alt="Circuit diagram with ESP32, DRV8833 and stepper driver" loading="lazy"><span class="gcap mono">Circuit: ESP32 + drivers</span></a>
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>04</span><h2>Iterations &amp; demo day</h2></div>
+    <div class="cs-ch-b"><p>We went through <strong>three iterations</strong> of the assembly. The slewing connector
+        didn&rsquo;t fit because the motor shaft was thicker than its spec sheet said, and print failures
+        broke a few final parts. We added tolerance to every press-fit part and moved all printing to one
+        printer (a Bambu A1), which made the final iteration accurate.</p>
+      <p>During final integration, we burnt out our second motor driver. We rewired the spool motor
+        and electromagnet to physical switches and kept the stepper on the phone app. That turned out
+        to save the demo: the venue Wi-Fi was unreliable, and the switches kept the crane working for
+        everyone who came by.</p></div>
+  </section>
+
+  <section class="cs-media">
+    <div class="cs-media-h"><h2>Design</h2><span>CAD and electronics</span></div>
+    <div class="cs-row">
+      <figure style="--ar:1.054"><a class="ph" href="../assets/images/crane/crane-cad.png"><img src="../assets/images/crane/crane-cad.png" alt="Isometric CAD model of the tower crane" loading="lazy"></a><figcaption><b>Fig. 4</b> Full assembly in Creo.</figcaption></figure>
+      <figure style="--ar:0.926"><a class="ph" href="../assets/images/crane/crane-base-cad.png"><img src="../assets/images/crane/crane-base-cad.png" alt="CAD of the telescoping crane base" loading="lazy"></a><figcaption><b>Fig. 5</b> Telescoping base.</figcaption></figure>
+      <figure style="--ar:1.5"><a class="ph" href="../assets/images/crane/crane-circuit.jpg"><img src="../assets/images/crane/crane-circuit.jpg" alt="Circuit diagram with ESP32, DRV8833 and stepper driver" loading="lazy"></a><figcaption><b>Fig. 6</b> Circuit: ESP32 and drivers.</figcaption></figure>
     </div>
   </section>
 
-  <div class="prevnext mono">
-    <a class="pn-link" href="quadruped.html"><span class="pn-k">← PREV CASE STUDY</span><span class="pn-v">Humanoid Robot Club</span></a>
-    <a class="pn-link next" href="racecar.html"><span class="pn-k">NEXT CASE STUDY →</span><span class="pn-v">Phone-Controlled Mini Race Car</span></a>
-  </div>
+  <a class="cs-next" href="racecar.html">
+    <span><span class="k">Next project</span><span class="t">Mini Race Car <span class="ar">→</span></span></span>
+    <span class="ph"><img src="../assets/images/racecar/racecar.jpg" alt="" loading="lazy"></span>
+  </a>
 
   <footer id="contact">
     <div class="fgrid">
-      <div class="brand display">Let's build something.</div>
-      <div class="flinks mono">
+      <div class="brand">Let's build something.</div>
+      <div class="flinks">
         <a href="mailto:akul.ramasubban@gmail.com" data-goatcounter-click="email-click">akul.ramasubban@gmail.com</a>
         <a href="https://www.linkedin.com/in/akulramasubban/" data-goatcounter-click="linkedin-click">LinkedIn</a>
         <a href="../assets/resume.pdf" data-goatcounter-click="resume-download">Resume ↓</a>
       </div>
     </div>
-    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+    <div class="fprint">© 2026 Akul Ramasubban — San Francisco, CA</div>
   </footer>
 </div>
-<script src="../script.js"></script>
+<script src="../script.js?v=7"></script>
 <script data-goatcounter="https://akram.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

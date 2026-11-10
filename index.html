@@ -4,11 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Akul Ramasubban — Mechanical Engineer</title>
-<meta name="description" content="Mechanical engineering portfolio — battery systems, robotics, and manufacturing.">
+<meta name="description" content="Mechanical engineering portfolio of Akul Ramasubban: battery systems at Tesla and Purdue Electric Racing, quadruped robots, and hardware builds.">
+<meta property="og:title" content="Akul Ramasubban — Mechanical Engineer">
+<meta property="og:description" content="Battery systems, robotics and hardware builds. Purdue ME '27.">
+<meta property="og:image" content="assets/images/battery-pack/per-car.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=7">
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -20,8 +23,8 @@
 <body>
 <div class="wrap">
   <header>
-    <a class="brand display" href="index.html">AKUL R.<span class="dot">/</span></a>
-    <nav class="mono">
+    <a class="brand" href="index.html">Akul Ramasubban</a>
+    <nav>
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="assets/resume.pdf" data-goatcounter-click="resume-download">Resume</a>
@@ -45,201 +48,112 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <div class="hero-main">
-      <div class="eyebrow mono">MECHANICAL ENGINEERING — PURDUE UNIVERSITY</div>
-      <h1 class="display">Akul<br>Ramasubban</h1>
-      <p class="lede">
-        I'm a mechanical engineering student at Purdue with a strong interest in robotics, energy,
-        and autonomous vehicles. I like pairing a strong mechanical design background with software
-        to build cutting-edge technology.
-      </p>
-    </div>
-    <div class="hero-meta">
-      <div class="headshot">
-        <img src="assets/images/akul.jpg" alt="Akul Ramasubban" loading="lazy">
-      </div>
-      <div class="meta-item">
-        <span class="k mono">Status</span>
-        <span class="v"><span class="status-dot"></span>Open to full-time roles</span>
-      </div>
-      <div class="meta-item">
-        <span class="k mono">Based</span>
-        <span class="v">San Francisco, CA</span>
-      </div>
-      <div class="meta-item">
-        <span class="k mono">Focus</span>
-        <span class="v">Design / Autonomy</span>
-      </div>
-    </div>
+  <h1 class="name">Akul<br>Ramasubban</h1>
+  <div class="sub">
+    <div><span class="k">Studying</span>Mechanical Engineering, Purdue '27</div>
+    <div><span class="k">Status</span><span class="status-dot" aria-hidden="true"></span>Open to full-time roles</div>
+    <p>I design mechanical systems for robots and electric vehicles, and write the software that makes them move. Most recently: eight months on a Tesla battery cell line. Based in San Francisco.</p>
   </div>
 
-  <section id="work">
-    <div class="section-head">
-      <h2 class="display">Selected Work</h2>
-      <span class="tag mono">2021 — PRESENT</span>
-    </div>
-    <div class="grid">
+  <div class="strip">
+    <figure><img src="assets/images/battery-pack/per-car.jpg" style="object-position:center 60%" alt="Purdue Electric Racing's 2025 Formula SAE electric car"><figcaption>PER 2025 car</figcaption></figure>
+    <figure><img src="assets/images/crane/crane-final.jpg" alt="Red 3D-printed tower crane"><figcaption>ME 444 crane</figcaption></figure>
+    <figure><img src="assets/images/pushcart/cart-deployed.jpg" alt="Electric pushcart in use on a street in Bangalore"><figcaption>Pushcart, Bangalore</figcaption></figure>
+  </div>
 
-      <div class="card feature">
-        <div class="proj-art nda-art">
-          <img class="tesla-logo" src="assets/images/tesla/tesla-logo.png" alt="Tesla logo" loading="lazy">
-          <span class="nda-tag mono">NDA — no photos</span>
-        </div>
-        <div class="card-body">
-          <h3>Tesla — Cell Manufacturing</h3>
-          <p>Eight months on a battery cell line: an accelerated vibration test jig, a small
-            autonomous tool that fixes a supplier&rsquo;s misaligned parts, and a laser-weld root cause
-            hunt that raised cell yield. No photos (NDA), but the
-            stories are on the page.</p>
-          <div class="chips mono"><span class="chip">EQUIPMENT DESIGN</span><span class="chip">LASER WELDING</span><span class="chip">RCA / DOE</span></div>
-          <a class="go mono" href="projects/tesla.html">View projects →</a>
-        </div>
-      </div>
+  <section class="idx" id="work">
+    <div class="idx-top"><h2>Selected work</h2><span>7 projects · 2021 to now</span></div>
+    <div class="idx-h"><span></span><span>Project</span><span>Role</span><span>Type / Year</span><span></span></div>
 
-      <div class="card feature">
-        <div class="proj-art has-photo">
-          <img class="photo" style="object-position:center 60%" src="assets/images/battery-pack/per-car.jpg" alt="Purdue Electric Racing's 2025 Formula SAE electric car at dusk" loading="lazy">
-        </div>
-        <div class="card-body">
-          <h3>Purdue Electric Racing</h3>
-          <div class="card-role mono">Battery Senior Advisor — Battery Pack &amp; Thermal</div>
-          <p>Reworked the module architecture for a 30% gain in energy density, then built a
-            thermal interface/spacer system that lifted cooling performance 10% — validated on
-            an Arduino-instrumented rig ahead of a 100% leak-free tech inspection.</p>
-          <div class="chips mono"><span class="chip">MECHANICAL DESIGN</span><span class="chip">MANUFACTURING</span><span class="chip">TESTING</span></div>
-          <a class="go mono" href="projects/battery-pack.html">View case study →</a>
-        </div>
-      </div>
+    <a class="row" href="projects/tesla.html">
+      <span class="mini"><img src="assets/images/tesla/tesla-team.jpg" style="object-position:center 70%" alt="Akul with friends at Tesla" loading="lazy"></span>
+      <span class="info"><span class="t">Tesla Cell Manufacturing</span><span class="d">Six fixes shipped to a cell line, including a laser-weld fix worth ~10,000 more good cells a week and a jig that ran 60,000 cells with zero faults.</span></span>
+      <span class="r">Equipment / Process Design Engineering Intern</span>
+      <span class="y"><b>Internship</b>Jan – Aug 2026</span>
+      <span class="ar" aria-hidden="true">↗</span>
+    </a>
 
-      <div class="card feature">
-        <div class="proj-art has-photo">
-          <img class="photo" style="object-fit:contain; background:linear-gradient(90deg,#f6f6f6 0 50%,#dedede 50%)" src="assets/images/quadruped/quadruped-iso.png" alt="CAD render of the Purdue Humanoid Robot Club quadruped" loading="lazy">
-        </div>
-        <div class="card-body">
-          <h3>Humanoid Robot Club</h3>
-          <div class="card-role mono">Quadruped Project Lead</div>
-          <p>Leading Purdue Humanoid Robot Club's quadruped: a team-built robot dog.
-            I focus on design validation, electronics integration, and MuJoCo simulation as we
-            compare different leg designs. Work in progress.</p>
-          <div class="chips mono"><span class="chip">MUJOCO</span><span class="chip">DESIGN VALIDATION</span><span class="chip">ELECTRONICS</span></div>
-          <a class="go mono" href="projects/quadruped.html">View case study →</a>
-        </div>
-      </div>
+    <a class="row" href="projects/battery-pack.html">
+      <span class="mini"><img src="assets/images/battery-pack/per-car.jpg" style="object-position:center 60%" alt="PER 2025 car" loading="lazy"></span>
+      <span class="info"><span class="t">Purdue Electric Racing</span><span class="d">Responsible engineer for the battery module: +30% specific energy, an 11% lighter cooling system and a 1.075″ narrower pack.</span></span>
+      <span class="r">Module Responsible Engineer, then Battery Senior Advisor</span>
+      <span class="y"><b>Student team</b>2023 – 2026</span>
+      <span class="ar" aria-hidden="true">↗</span>
+    </a>
 
-      <div class="card">
-        <div class="proj-art has-photo">
-          <img class="photo" style="object-position:center 45%" src="assets/images/crane/crane-final.jpg" alt="Red 3D-printed phone-controlled tower crane" loading="lazy">
-        </div>
-        <div class="card-body">
-          <h3>Phone-Controlled Crane Arm</h3>
-          <p>A toy tower crane built with a team of four: a telescoping tower to fit a 10-inch box,
-            360° slewing on a stepper motor, and an electromagnet on a spool, all driven from a
-            phone.</p>
-          <div class="chips mono"><span class="chip">CREO</span><span class="chip">ESP32 / BLYNK</span><span class="chip">3D PRINTING</span></div>
-          <a class="go mono" href="projects/crane.html">View case study →</a>
-        </div>
-      </div>
+    <a class="row" href="projects/quadruped.html">
+      <span class="mini"><img src="assets/images/quadruped/quadruped-built.jpg" style="object-position:center 60%" alt="Assembled quadruped robot prototype" loading="lazy"><span class="tag">In progress</span></span>
+      <span class="info"><span class="t">Quadruped Robot</span><span class="d">Leading Purdue Humanoid Robot Club's robot dog. The first prototype walks carrying an onboard NUC; the next one targets a jump 4× its body height.</span></span>
+      <span class="r">Project Lead</span>
+      <span class="y"><b>Student team</b>2026 – now</span>
+      <span class="ar" aria-hidden="true">↗</span>
+    </a>
 
-      <div class="card">
-        <div class="proj-art has-photo">
-          <img class="photo" src="assets/images/racecar/racecar.jpg" alt="3D-printed phone-controlled mini race car with dual motors and servo steering" loading="lazy">
-        </div>
-        <div class="card-body">
-          <h3>Phone-Controlled Mini Race Car</h3>
-          <p>A fully 3D-printed RC car with a 5:1 gear reduction, dual-motor drive, and custom
-            servo steering, controlled from a phone through a custom Blynk app — all packed
-            into a 10-inch footprint around existing motors.</p>
-          <div class="chips mono"><span class="chip">3D PRINTING</span><span class="chip">BLYNK</span><span class="chip">MECHATRONICS</span></div>
-          <a class="go mono" href="projects/racecar.html">View case study →</a>
-        </div>
-      </div>
+    <a class="row" href="projects/orchard-robot.html">
+      <span class="mini soon">Photos coming soon<span class="tag">In progress</span></span>
+      <span class="info"><span class="t">Orchard Laser Robot</span><span class="d">An NSF-funded robot arm on a Unitree Go2. I built the servo-driven gripper/cutter and the grasp, laser and cut sequence it runs.</span></span>
+      <span class="r">Undergraduate Researcher, Purdue MARS Lab</span>
+      <span class="y"><b>Research</b>2026 – now</span>
+      <span class="ar" aria-hidden="true">↗</span>
+    </a>
 
-      <div class="card">
-        <div class="proj-art">
-          <svg viewBox="0 0 320 240" fill="none">
-            <g class="a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="60" y="140" width="60" height="30" rx="4"/>
-              <path d="M65 170 L50 200 M115 170 L100 200 M65 170 L80 200 M115 170 L96 200"/>
-              <path d="M110 145 L160 100 L182 100"/>
-              <circle cx="188" cy="100" r="6"/>
-            </g>
-            <g class="b" stroke-width="1.6" stroke-linecap="round">
-              <path d="M220 205 Q216 150 236 108"/>
-              <ellipse cx="238" cy="100" rx="16" ry="9" transform="rotate(-30 238 100)"/>
-              <ellipse cx="256" cy="120" rx="14" ry="8" transform="rotate(20 256 120)"/>
-              <ellipse cx="252" cy="150" rx="13" ry="7" transform="rotate(-10 252 150)"/>
-            </g>
-            <g class="dim" stroke-width="1" stroke-dasharray="3 3">
-              <polygon points="222,84 256,92 262,116 236,124"/>
-            </g>
-            <g class="dim" stroke-width="1">
-              <circle cx="238" cy="100" r="14"/>
-              <path d="M238 90 v6 M238 104 v6 M228 100 h6 M242 100 h6"/>
-            </g>
-          </svg>
-        </div>
-        <div class="card-body">
-          <h3>Autonomous Orchard Laser Robot</h3>
-          <p>A robotic arm on a Unitree quadruped with a DINO/SAM perception pipeline that
-            segments diseased foliage, now being adapted from spraying to targeted laser
-            treatment. Work in progress.</p>
-          <div class="chips mono"><span class="chip">ROS2</span><span class="chip">DINO/SAM</span><span class="chip">UNITREE</span></div>
-          <a class="go mono" href="projects/orchard-robot.html">View case study →</a>
-        </div>
-      </div>
+    <a class="row" href="projects/crane.html">
+      <span class="mini"><img src="assets/images/crane/crane-final.jpg" style="object-position:center 45%" alt="3D-printed tower crane" loading="lazy"></span>
+      <span class="info"><span class="t">Phone-Controlled Crane</span><span class="d">A toy tower crane that slews 360° at 20 rpm, telescopes from 10 to 15 inches, and lifts with an electromagnet, all from a phone. Under $70.</span></span>
+      <span class="r">Electronics &amp; payload, team of 4</span>
+      <span class="y"><b>ME 444</b>Fall 2025</span>
+      <span class="ar" aria-hidden="true">↗</span>
+    </a>
 
-      <div class="card">
-        <div class="proj-art has-photo">
-          <img class="photo" src="assets/images/pushcart/cart-deployed.jpg" alt="Electric pushcart in use at a market street in Bangalore" loading="lazy">
-        </div>
-        <div class="card-body">
-          <h3>The Pushcart Project</h3>
-          <p>Designed and built a functional electric waste-cart for under $2,000 to replace
-            ICE pushcarts in Bangalore, then donated it into daily use — a self-directed build
-            from first sketch to deployed hardware.</p>
-          <div class="chips mono"><span class="chip">CAD</span><span class="chip">DFM</span><span class="chip">FIELD TEST</span></div>
-          <a class="go mono" href="projects/pushcart.html">View case study →</a>
-        </div>
-      </div>
+    <a class="row" href="projects/racecar.html">
+      <span class="mini"><img src="assets/images/racecar/racecar.jpg" alt="3D-printed RC race car" loading="lazy"></span>
+      <span class="info"><span class="t">Mini Race Car</span><span class="d">A fully 3D-printed RC car with a 5:1 reduction, dual motors and a 65° steering setup, packed into 10 inches.</span></span>
+      <span class="r">Designer &amp; Builder</span>
+      <span class="y"><b>Build</b>3D printing, Blynk</span>
+      <span class="ar" aria-hidden="true">↗</span>
+    </a>
 
-    </div>
+    <a class="row" href="projects/pushcart.html">
+      <span class="mini"><img src="assets/images/pushcart/cart-deployed.jpg" alt="Electric pushcart in Bangalore" loading="lazy"></span>
+      <span class="info"><span class="t">The Pushcart Project</span><span class="d">Built at 16: an electric waste cart for $1,850, with motor and battery sized from road-surface analysis, donated into daily use in Bangalore.</span></span>
+      <span class="r">Founder / Sole Designer</span>
+      <span class="y"><b>Personal</b>2021</span>
+      <span class="ar" aria-hidden="true">↗</span>
+    </a>
   </section>
 
-  <section id="about">
-    <div class="section-head">
-      <h2 class="display">About</h2>
-      <span class="tag mono">PURDUE — CLASS OF 2027</span>
-    </div>
-    <div class="about">
-      <div class="big-word display">Robotics, autonomy, and <em>problems worth solving.</em></div>
-      <div>
-        <p>My engineering decisions are grounded in hands-on experience: designing battery modules
-          for Purdue Electric Racing's Formula SAE team, and industry work at Tesla. Before any of
-          that, I built an electric pushcart for waste workers in Bangalore, which was my first
-          lesson in designing for the people who actually use the thing.</p>
-        <a class="press-card" href="https://engineering.purdue.edu/Engr/AboutUs/News/Features/2025/2026-0710-Purdue-ME-student-turns-early-passion-for-cars-into-career-path" data-goatcounter-click="press-purdue-about" target="_blank" rel="noopener">
-          <span class="press-k mono">Featured — Purdue Engineering News</span>
-          <span class="press-title">"Purdue ME student turns early passion for cars into career path"</span>
-          <span class="press-cta mono">Read the article ↗</span>
-        </a>
-      </div>
+  <section class="about" id="about">
+    <p class="big">Robotics, autonomy, and problems worth solving.</p>
+    <div>
+      <p>My engineering decisions come from hands-on work: battery modules for Purdue Electric Racing's Formula SAE car, and production equipment on a Tesla cell line.</p>
+      <p>Before any of that, I built an electric pushcart for waste workers in Bangalore. It was my first lesson in designing for the people who actually use the thing.</p>
+      <dl class="facts">
+        <dt>School</dt><dd>Purdue University, B.S. Mechanical Engineering, 2027 · Presidential Scholar</dd>
+        <dt>Internships</dt><dd>Tesla (2026), Ford (2025), Tredence (2024)</dd>
+        <dt>Based</dt><dd>San Francisco, CA</dd>
+        <dt>Tools</dt><dd>SolidWorks, 3DX, Creo, GD&amp;T, tolerance analysis, DFM, DFMEA, DOE, JMP, MATLAB / Simscape, Python, Arduino, 3D printing</dd>
+      </dl>
+      <a class="press-card" href="https://engineering.purdue.edu/Engr/AboutUs/News/Features/2025/2026-0710-Purdue-ME-student-turns-early-passion-for-cars-into-career-path" data-goatcounter-click="press-purdue-about" target="_blank" rel="noopener">
+        <span class="press-k">Featured in Purdue Engineering News</span>
+        <span class="press-title">Purdue ME student turns early passion for cars into career path</span>
+        <span class="press-cta">Read the article ↗</span>
+      </a>
     </div>
   </section>
 
   <footer id="contact">
     <div class="fgrid">
-      <div class="brand display">Let's build something.</div>
-      <div class="flinks mono">
+      <div class="brand">Let's build something.</div>
+      <div class="flinks">
         <a href="mailto:akul.ramasubban@gmail.com" data-goatcounter-click="email-click">akul.ramasubban@gmail.com</a>
         <a href="https://www.linkedin.com/in/akulramasubban/" data-goatcounter-click="linkedin-click">LinkedIn</a>
         <a href="assets/resume.pdf" data-goatcounter-click="resume-download">Resume ↓</a>
       </div>
     </div>
-    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+    <div class="fprint">© 2026 Akul Ramasubban — San Francisco, CA</div>
   </footer>
 </div>
-<script src="script.js"></script>
+<script src="script.js?v=7"></script>
 <script data-goatcounter="https://akram.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

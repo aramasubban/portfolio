@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Humanoid Robot Club — Akul Ramasubban</title>
+<meta name="description" content="Leading Purdue Humanoid Robot Club's quadruped: leg design, electronics and MuJoCo simulation.">
+<meta property="og:title" content="Humanoid Robot Club — Akul Ramasubban">
+<meta property="og:description" content="Leading Purdue Humanoid Robot Club's quadruped: leg design, electronics and MuJoCo simulation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=7">
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -19,8 +22,8 @@
 <body>
 <div class="wrap">
   <header>
-    <a class="brand display" href="../index.html">AKUL R.<span class="dot">/</span></a>
-    <nav class="mono">
+    <a class="brand" href="../index.html">Akul Ramasubban</a>
+    <nav>
       <a href="../index.html#work">Work</a>
       <a href="../index.html#about">About</a>
       <a href="../assets/resume.pdf" data-goatcounter-click="resume-download">Resume</a>
@@ -44,91 +47,83 @@
     </nav>
   </header>
 
-  <div class="crumb mono">
-    <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#work">Work</a><span class="sep">/</span><span class="cur">Humanoid Robot Club</span>
+  <div class="cs-bar"><a href="../index.html#work">← All work</a><span class="ix">03 / 07</span></div>
+  <h1 class="cs-title">Humanoid Robot Club</h1>
+  <div class="cs-intro">
+    <p class="cs-lede">Leading the quadruped project at Purdue&rsquo;s Humanoid Robot Club: a team-built robot dog, from leg concepts to simulation.</p>
+    <dl class="cs-spec"><div><dt>Role</dt><dd>Quadruped Project Lead</dd></div><div><dt>When</dt><dd>Aug 2026 — Present</dd></div><div><dt>Owned</dt><dd>Mechanical design, motor selection, assembly, team coordination</dd></div><div><dt>Sim</dt><dd>MuJoCo, ROS / Gazebo</dd></div><div><dt>Status</dt><dd>Prototype walking; successor in design</dd></div></dl>
   </div>
-
-  <div class="proj-head">
-    <h1 class="display">Humanoid Robot Club</h1>
-    <p class="one-liner">Leading the quadruped project at Purdue&rsquo;s Humanoid Robot Club: a team-built robot dog, from leg concepts to simulation.</p>
-    <div class="proj-meta mono">
-      <div><span class="k">Role</span><span class="v">Quadruped Project Lead</span></div>
-      <div><span class="k">Timeframe</span><span class="v">2026 — Present</span></div>
-      <div class="focus"><span class="k">Focus</span><span class="v">Design validation, electronics integration &amp; simulation</span></div>
+    <div class="cs-row cs-hero">
+      <figure style="--ar:0.75"><a class="ph" href="../assets/images/quadruped/quadruped-built.jpg"><img src="../assets/images/quadruped/quadruped-built.jpg" alt="Assembled 3D-printed quadruped robot in orange and blue with spring-loaded legs"></a><figcaption><b>Fig. 1</b> The first prototype. It walks unsupported and crouches while carrying an onboard NUC.</figcaption></figure>
+      <figure style="--ar:1.641"><div class="ph"><video src="../assets/images/quadruped/mujoco-sim.mp4" poster="../assets/images/quadruped/mujoco-sim-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="MuJoCo simulation of a single spring-assisted quadruped leg"></video><span class="vid-tag">Video</span></div><figcaption><b>Fig. 2</b> Leg assembly in MuJoCo.</figcaption></figure>
     </div>
-  </div>
 
-  <div class="media-row" style="--row-w:1100px">
-    <figure style="--ar:1.641">
-      <video src="../assets/images/quadruped/mujoco-sim.mp4" poster="../assets/images/quadruped/mujoco-sim-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="MuJoCo simulation of a single spring-assisted quadruped leg"></video>
-      <figcaption class="mono"><span class="live-dot"></span>Leg assembly in MuJoCo</figcaption>
-    </figure>
-    <figure style="--ar:1.213">
-      <img src="../assets/images/quadruped/quadruped-iso.png" alt="Isometric CAD render of the quadruped robot with four linkage legs">
-      <figcaption class="mono">Full-body CAD</figcaption>
-    </figure>
-  </div>
-
-  <div class="proj-body">
-    <div class="num mono">01</div>
-    <div>
-      <h2 class="display">The Project</h2>
-      <p>The quadruped is a team build inside Purdue's Humanoid Robot Club. The design, CAD
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>01</span><h2>The project</h2></div>
+    <div class="cs-ch-b"><p>The quadruped is a team build inside Purdue's Humanoid Robot Club. The design, CAD
         and simulation work on this page is a collective effort &mdash; everyone on the project
-        has worked to get the design and simulation off the ground.</p>
-    </div>
-  </div>
+        has worked to get the design and simulation off the ground.</p></div>
+  </section>
 
-  <div class="proj-body">
-    <div class="num mono">02</div>
-    <div>
-      <h2 class="display">My Role</h2>
-      <p>I lead the project. I manage every subteam &mdash; mechanical, electronics and
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>02</span><h2>My role</h2></div>
+    <div class="cs-ch-b"><p>I lead the project. I manage every subteam &mdash; mechanical, electronics and
         simulation &mdash; and own the engineering decisions that tie them together, from which
         leg concepts move forward to how the robot's hardware and software come together.</p>
-    </div>
-  </div>
+      <p>Hands-on, I lead the mechanical design, motor selection and assembly. We use ROS and Gazebo
+        simulation in design reviews and for motor integration, and MuJoCo to compare leg designs.</p></div>
+  </section>
 
-  <div class="proj-body">
-    <div class="num mono">03</div>
-    <div>
-      <h2 class="display">Our Goal</h2>
-      <p>We're building a quadruped that can see a table or raised platform, judge where it is,
-        and jump onto it. That means pairing onboard vision with legs that can deliver a huge
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>03</span><h2>The first prototype</h2></div>
+    <div class="cs-ch-b"><p>Our first prototype walks unsupported and can crouch while carrying an onboard NUC, the
+        computer that will eventually run its vision.</p></div>
+  </section>
+
+  <section class="cs-band">
+    <div class="k">What&rsquo;s next</div>
+    <p class="note">A successor design built to jump.</p>
+    <div class="cs-nums"><div><b>4&times;</b><span>body height: the successor&rsquo;s jump target</span></div><div><b>2</b><span>leg concepts under test in MuJoCo</span></div><div><b>3</b><span>subteams I manage</span></div></div>
+  </section>
+
+  <section class="cs-ch">
+    <div class="cs-ch-h"><span>04</span><h2>The goal</h2></div>
+    <div class="cs-ch-b"><p>The successor robot should see a table or raised platform, judge where it is,
+        and jump onto it: a target of four times its own body height. That means pairing onboard vision with legs that can deliver a huge
         burst of power and still land cleanly &mdash; a hard problem on both the perception and
         hardware side. We're testing spring-assisted and linkage-driven legs in MuJoCo to find
-        the design that can make that jump. Work in progress.</p>
-    </div>
-  </div>
+        the design that can make that jump.</p>
+      <span class="pill">Work in progress</span></div>
+  </section>
 
-  <section style="padding-block:12px 0;">
-    <div class="gallery-head mono">Leg concepts &amp; full-body CAD</div>
-    <div class="gallery">
-      <a class="gtile has-img fit" href="../assets/images/quadruped/leg-spring.png" target="_blank" rel="noopener"><img src="../assets/images/quadruped/leg-spring.png" alt="CAD render of a spring-assisted quadruped leg with a hip motor" loading="lazy"><span class="gcap mono">Concept &mdash; spring-assisted leg</span></a>
-      <a class="gtile has-img fit" href="../assets/images/quadruped/leg-linkage.png" target="_blank" rel="noopener"><img src="../assets/images/quadruped/leg-linkage.png" alt="CAD render of a linkage-driven quadruped leg with a geared hip actuator" loading="lazy"><span class="gcap mono">Concept &mdash; linkage-driven leg</span></a>
-      <a class="gtile has-img fit" href="../assets/images/quadruped/quadruped-side.png" target="_blank" rel="noopener"><img src="../assets/images/quadruped/quadruped-side.png" alt="Side-view CAD render of the full quadruped robot" loading="lazy"><span class="gcap mono">Full body &mdash; side view</span></a>
+  <section class="cs-media">
+    <div class="cs-media-h"><h2>Leg concepts</h2><span>And the full-body CAD</span></div>
+    <div class="cs-row">
+      <figure style="--ar:1.213"><a class="ph" href="../assets/images/quadruped/quadruped-iso.png"><img src="../assets/images/quadruped/quadruped-iso.png" alt="Isometric CAD render of the quadruped robot with four linkage legs" loading="lazy"></a><figcaption><b>Fig. 3</b> Full-body CAD.</figcaption></figure>
+      <figure style="--ar:0.875"><a class="ph" href="../assets/images/quadruped/leg-spring.png"><img src="../assets/images/quadruped/leg-spring.png" alt="CAD render of a spring-assisted quadruped leg with a hip motor" loading="lazy"></a><figcaption><b>Fig. 4</b> Concept: spring-assisted leg.</figcaption></figure>
+      <figure style="--ar:0.864"><a class="ph" href="../assets/images/quadruped/leg-linkage.png"><img src="../assets/images/quadruped/leg-linkage.png" alt="CAD render of a linkage-driven quadruped leg with a geared hip actuator" loading="lazy"></a><figcaption><b>Fig. 5</b> Concept: linkage-driven leg.</figcaption></figure>
+      <figure style="--ar:1.383"><a class="ph" href="../assets/images/quadruped/quadruped-side.png"><img src="../assets/images/quadruped/quadruped-side.png" alt="Side-view CAD render of the full quadruped robot" loading="lazy"></a><figcaption><b>Fig. 6</b> Full body, side view.</figcaption></figure>
     </div>
   </section>
 
-
-  <div class="prevnext mono">
-    <a class="pn-link" href="battery-pack.html"><span class="pn-k">← PREV CASE STUDY</span><span class="pn-v">Purdue Electric Racing</span></a>
-    <a class="pn-link next" href="crane.html"><span class="pn-k">NEXT CASE STUDY →</span><span class="pn-v">Phone-Controlled Crane Arm</span></a>
-  </div>
+  <a class="cs-next" href="orchard-robot.html">
+    <span><span class="k">Next project</span><span class="t">Orchard Laser Robot <span class="ar">→</span></span></span>
+    <span class="ph empty">Photos coming soon</span>
+  </a>
 
   <footer id="contact">
     <div class="fgrid">
-      <div class="brand display">Let's build something.</div>
-      <div class="flinks mono">
+      <div class="brand">Let's build something.</div>
+      <div class="flinks">
         <a href="mailto:akul.ramasubban@gmail.com" data-goatcounter-click="email-click">akul.ramasubban@gmail.com</a>
         <a href="https://www.linkedin.com/in/akulramasubban/" data-goatcounter-click="linkedin-click">LinkedIn</a>
         <a href="../assets/resume.pdf" data-goatcounter-click="resume-download">Resume ↓</a>
       </div>
     </div>
-    <div class="fprint mono">© 2026 Akul Ramasubban — San Francisco, CA</div>
+    <div class="fprint">© 2026 Akul Ramasubban — San Francisco, CA</div>
   </footer>
 </div>
-<script src="../script.js"></script>
+<script src="../script.js?v=7"></script>
 <script data-goatcounter="https://akram.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
